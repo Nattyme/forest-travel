@@ -7,6 +7,10 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+.none {
+    display: none;
+}
+
 /* Header */
 
 .header {
@@ -89,6 +93,7 @@ body {
 
     font-size: 16px;
     text-align: center;
+    color: #fff;
 }
 
 .header-scroll::after {
@@ -127,7 +132,39 @@ body {
     width: 470px;
 }
 
+.header-2 {
+    margin-bottom: 20px;
+    font-size: 54px;
+    font-weight: 700;
+    color: #31405B;
+}
+
+.main-content-text {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.6; /* 32px */
+    color: #31405B;
+}
+
+.main-content-text p {
+    margin-bottom: 15px;
+}
+
+.button {
+    height: 50px;
+    padding: 0 40px;
+    border-radius: 50px;
+    background-color: #0AC883;
+    box-shadow: 0px 8px 20px 0px rgba(24, 219, 148, 0.35);
+
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+
 .main-img {
     width: 570px;
 }
-
