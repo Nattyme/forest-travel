@@ -1,7 +1,8 @@
 @import "./reset.css";
 
-/*font-family: 'Lobster', sans-serif;
-font-family: 'PT Sans', sans-serif;*/
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'PT Sans', sans-serif;
@@ -58,7 +59,7 @@ body {
 }
 
 .header-nav-link {
-    /* color: #fff; */
+    color: #fff;
 }
 
 .header-content {
@@ -123,9 +124,19 @@ body {
 }
 
 .main-row {
+    margin-bottom: 120px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.main-row:last-child {
+    margin-bottom: 0;
+}
+
+.main-row:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .main-content {
@@ -146,6 +157,11 @@ body {
     color: #31405B;
 }
 
+.main-content-text a {
+    text-decoration-line: underline;
+    color: #138ECE;
+}
+
 .main-content-text p {
     margin-bottom: 15px;
 }
@@ -163,8 +179,23 @@ body {
     color: #fff;
 }
 
-
-
 .main-img {
     width: 570px;
 }
+
+/* Footer */
+.footer {
+}
+.container {
+}
+.footer-row {
+}
+.footer-copyright {
+}
+.footer-widget {
+}
+.footer-widget-title {
+}
+.footer-widget-list {
+}
+
