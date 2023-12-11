@@ -185,17 +185,71 @@ body {
 
 /* Footer */
 .footer {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background-color: #265847;
+    color: #fff;
 }
-.container {
+
+.footer a {
+    color: #fff;
 }
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
 .footer-row {
+    display: flex;
+    justify-content: space-between;
 }
+
 .footer-copyright {
+    width: 270px;
 }
+
+.footer-logo {
+    margin-bottom: 26px;
+}
+
+.footer-copyright p {
+    font-size: 16px;
+    line-height: 1.6; 
+}
+
+.footer-widgets-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
 .footer-widget {
+    font-size: 18px;
 }
+
+.footer-widget-info {
+    width: 170px;
+}
+
+.footer-widget-services,
+.footer-widget-contacts {
+    width: 270px;
+}
+
+.footer-widget p {
+    margin-bottom: 15px;
+}
+
 .footer-widget-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
 }
+
 .footer-widget-list {
+    font-size: 18px;
+}
+
+.footer-widget-list li {
+    margin-bottom: 15px;
 }
 
