@@ -28,6 +28,17 @@ img {
     color: #fff;
 }
 
+.header-inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #265847;
+    background-image: url(./../img/header-small-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
 .header-top {
     margin: 0 auto;
     width: 1170px;
@@ -244,5 +255,38 @@ a.button {
 
 .footer-widget-list li {
     margin-bottom: 15px;
+}
+
+/* Inner page tours */
+
+.inner-page-tours {
+    padding: 60px 0 100px;
+}
+
+.inner-page-tours-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Cards */
+.cards-wrapper {
+}
+
+.cards-top-row {
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-bottom-row-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
