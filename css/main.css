@@ -319,7 +319,7 @@ a.button {
 .standart-card:hover, 
 .wide-card:hover,
 .high-card:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .card-title-wrapper {
