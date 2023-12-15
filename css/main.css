@@ -359,6 +359,12 @@ a.button {
     background-color: #27695e;
 }
 
+/* Article page*/ 
+.row-article-page {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 
