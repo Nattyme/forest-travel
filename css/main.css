@@ -265,6 +265,10 @@ a.button {
     margin-bottom: 15px;
 }
 
+.footer-widget-list li:last-child {
+    margin-bottom: 0;
+}
+
 /* Inner page tours */
 .inner-page-tours {
     padding: 60px 0 100px;
@@ -422,11 +426,12 @@ a.button {
 
 .article-page-article h1 {
     margin-bottom: 40px;
+
     font-size: 54px;
+    font-weight: 700;
     line-height: normal;
 }
 
-.article-page-article h1,
 .article-page-article h2,
 .article-page-article h3,
 .article-page-article h4,
