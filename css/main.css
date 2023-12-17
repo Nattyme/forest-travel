@@ -11,6 +11,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+
+
+    color: #31405b;
 }
 
 main {
@@ -486,12 +489,40 @@ a.button {
 }
 
 .contact-info {
-
+    width: 470px;
 }
 
-.contact-form {
-
+.contact-block + .contact-block {
+    margin-top: 40px;
 }
 
+.contact-block-title {
+    margin-bottom: 20px;
 
+    font-size: 28px;
+    font-weight: 700;
+    color: #31405b;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    font-size: 20px;
+    line-height: 1.6; 
+}
+
+.contact-list a {
+    color: #138ece;
+}
+
+.contacts-list-img {
+}
 
