@@ -529,9 +529,18 @@ a.button {
     left: 0;
     transform: translateY(-50%);
 
-    display: block;
     width: 24px;
     height: 24px;
+}
 
-    background-color: red;
+.contact-list-icon.phone::before {
+    background-image: url("./../img/icons/icon-phone.svg");  
+}
+
+.contact-list-icon.mail::before {
+    background-image: url("./../img/icons/icon-mail.svg");  
+}
+
+.contact-list-icon.adress::before {
+    background-image: url("./../img/icons/icon-pin.svg");  
 }
