@@ -483,6 +483,7 @@ a.button {
 
 .contact-row {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -543,4 +544,13 @@ a.button {
 
 .contact-list-icon.adress::before {
     background-image: url("./../img/icons/icon-pin.svg");  
+}
+
+/* Contact form*/
+
+.contact-form {
+    padding: 40px;
+    width: 630px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(211, 211, 211, 0.25);
 }
