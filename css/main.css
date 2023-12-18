@@ -566,6 +566,10 @@ a.text-link {
     margin-bottom: 30px;
 }
 
+.form-group:last-of-type {
+    margin-bottom: 35px;
+}
+
 .form-group-title {
     margin-bottom: 15px;
     font-size: 20px;
@@ -600,7 +604,7 @@ a.text-link {
 }
 
 .radio-row {
-    display: block;
+    display: flex;
 }
 
 .radio-row + .radio-row {
@@ -617,10 +621,11 @@ a.text-link {
 }
 
 .custom-radio {
-    margin-right: 10px;
+    margin-right: 15px;
 
     position: relative;
     vertical-align: bottom;
+    flex-shrink: 0;
 
     display: inline-block;
     width: 20px;
@@ -659,7 +664,7 @@ a.text-link {
 
 .checkbox-row {
     margin-bottom: 20px;
-    display: block;
+    display: flex;
 }
 
 .real-checkbox {
@@ -672,10 +677,11 @@ a.text-link {
 }
 
 .custom-checkbox {
-    margin-right: 10px;
+    margin-right: 15px;
 
     position: relative;
     vertical-align: bottom;
+    flex-shrink: 0;
 
     display: inline-block;
     width: 20px;
