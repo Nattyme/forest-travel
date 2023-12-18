@@ -605,6 +605,7 @@ a.text-link {
 
 .radio-row {
     display: flex;
+    align-items: flex-start;
 }
 
 .radio-row + .radio-row {
@@ -663,8 +664,12 @@ a.text-link {
 /* Checkbox */
 
 .checkbox-row {
-    margin-bottom: 20px;
     display: flex;
+    align-items: flex-start;
+}
+
+.checkbox-row + .checkbox-row {
+    margin-top: 20px;
 }
 
 .real-checkbox {
@@ -691,6 +696,11 @@ a.text-link {
     border-radius: 2px;
     border: 1px solid #c0c0c0;
     background: #eee;
+}
+
+.real-checkbox:focus + .custom-checkbox {
+    border: 1px solid #2ab698;
+    box-shadow: 0 0 10px rgba(42, 182, 152, 0.5);
 }
 
 .custom-checkbox::before {
