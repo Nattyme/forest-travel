@@ -58,6 +58,19 @@ a.button, .button {
     color: #fff;
 }
 
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+legend {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 /* Header */
 .header {
     position: relative;
