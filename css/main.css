@@ -1,6 +1,7 @@
 @import "./reset.css";
 
 html {
+    height: 100%; /* sticky footer */
     scroll-behavior: smooth;
 }
 
@@ -8,12 +9,15 @@ body {
     font-family: 'PT Sans', sans-serif;
     line-height: normal;
 
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-
+    display: flex; /* sticky footer */
+    flex-direction: column; /* sticky footer */
+    height: 100%; /* sticky footer */
 
     color: #31405b;
+}
+
+body > * {
+    flex-shrink: 0;
 }
 
 main {
@@ -59,7 +63,7 @@ a.button, .button {
     position: relative;
 
     padding-top: 50px;
-    min-height: 800px;
+    height: 800px;
 
     background-image: url(./../img/header/header-bg.jpg);
     background-position: center;
@@ -71,7 +75,7 @@ a.button, .button {
 .header-inner {
     display: flex;
     align-items: center;
-    min-height: 100px;
+    height: 100px;
 
     background-image: url(./../img/header/header-small-bg.jpg);
     background-position: center;
@@ -207,6 +211,7 @@ a.text-link {
 
 /* Footer */
 .footer {
+    margin-top: auto; /* sticky footer */
     padding-top: 70px;
     padding-bottom: 90px;
 
@@ -509,7 +514,7 @@ a.text-link {
 .contact-list {
     display: flex;
     flex-direction: column;
-    row-gap: 24px;
+    row-gap: 15px;
     line-height: 1.6; 
 }
 
