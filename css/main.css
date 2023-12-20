@@ -16,6 +16,10 @@ body {
     color: #31405b;
 }
 
+.none {
+    display: none;
+}
+
 body > * {
     flex-shrink: 0;
 }
@@ -29,7 +33,8 @@ img {
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -120,9 +125,16 @@ legend {
     gap: 50px;
 }
 
+.mobile-nav {
+    display: none;
+    width: 38px;
+    height: 38px;
+}
+
 .header-content {
     position: absolute;
-    top: 50%;
+    top: 51%; /* 1% - pixel perfect*/
+    
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -145,9 +157,11 @@ legend {
     padding-bottom: 34px;
 
     position: absolute;
-    bottom: 25px;
-    left: 50%;
+    bottom: 26px; /* +1px pixel perfect*/
+    
+    left: 50%; 
     transform: translateX(-50%);
+    
 
     font-size: 16px;
     text-align: center;
@@ -155,9 +169,10 @@ legend {
 
 .header-scroll::after {
     position: absolute;
-    bottom: 0;
+    bottom: -1px; /* -1 px pixel perfect */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-35%); /*-15% pixel perfect*/
+    
 
     content: "";
     display: block;
