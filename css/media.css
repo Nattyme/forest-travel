@@ -406,6 +406,14 @@
         font-size: 16px;
     }
 
+    .form {
+        padding: 20px 31px 30px 15px;
+    }
+
+    .form-group-row {
+        flex-direction: column;
+    }
+
     .main-row {
         margin-bottom: 40px;
         flex-direction: column-reverse;
