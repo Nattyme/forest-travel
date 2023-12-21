@@ -54,6 +54,35 @@
         gap: 30px;
     } 
 
+    .contact-row {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .contact-block + .contact-block {
+        margin-top: 0;
+    }
+
+    .contact-block {
+        flex-shrink: 0;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .contact-block-body iframe {
+        width: 420px;
+        height: 310px;
+    }
+
     .main-content {
         width: 420px;
     }
@@ -162,6 +191,10 @@
     .header-title {
         font-size: 42px;
         line-height: 1;
+    }
+
+    .contacts-header {
+        margin-bottom: 30px;
     }
 
     .row-article-page {
