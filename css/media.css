@@ -70,12 +70,25 @@
         margin-top: 0;
     }
 
+    .contact-block-title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
     .contact-block {
         flex-shrink: 0;
     }
 
     .form {
         width: 100%;
+    }
+
+    .contact-list {
+        padding-top: 5px;
+    }
+
+    .contact-list li {
+        font-size: 18px;
     }
 
     .contact-block-body iframe {
