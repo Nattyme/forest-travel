@@ -174,10 +174,6 @@
         flex-grow: 1;
     }
 
-    .article-page-article h1 {
-        font-size: 42px;
-    }
-
     .article-page-article {
         font-size: 16px;
     }
@@ -185,6 +181,11 @@
     .header-content p {
         font-size: 20px;
     }
+
+    .article-page-article h1 {
+        font-size: 42px;
+    }
+
     /* main*/
     .main {
         padding: 60px 0;
@@ -256,7 +257,8 @@
     }
 
     .footer-row {
-        flex-wrap: wrap-reverse;
+        /* flex-wrap: wrap-reverse; */
+        flex-direction: column-reverse;
         row-gap: 50px;
     }
 
@@ -285,6 +287,18 @@
 
     .header-title {
         font-size: 32px;
+    }
+
+    .row-article-page {
+        row-gap: 0;
+    }
+
+    .article-page-nav-title {
+        margin-bottom: 20px;
+    }
+
+    .article-page-article {
+        width: 290px;
     }
 
     .article-page-article h1 {
@@ -367,10 +381,6 @@
     .article-page-nav-list a {
         padding-top: 7px;
         padding-bottom: 7px;
-    }
-
-    .article-page-article {
-        font-size: 22px;
     }
 
     .article-page-article h1,
