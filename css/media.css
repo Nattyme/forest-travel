@@ -46,7 +46,7 @@
     } 
 
     .inner-page {
-        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .main-row {
@@ -71,8 +71,30 @@
         font-size: 50px;
     }
 
+    .article-page-nav-list {
+        padding-right: 2px;
+        font-size: 18px;
+    }
+
+    .article-page-article {
+        width: 570px;
+    }
+
+    .article-page-article h1 {
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+
+    .article-page-article {
+        font-size: 18px;
+    }
+
     .main-content-text {
         font-size: 18px;
+    }
+
+    .article-page-article img  {
+        margin: 20px 0;
     }
 
     .main-img {
@@ -85,7 +107,6 @@
         height: 100%;
         object-fit: cover;
     }
-
      /* Card */
      .standart-card {
         width: 420px;
@@ -112,7 +133,6 @@
     .card-title {
         font-size: 24px;
     }
-
     /* Footer */
     .footer {
         padding-top: 50px;
@@ -121,8 +141,7 @@
 
     .footer-widget-services {
         display: none;
-    }
-    
+    } 
 }
 
 /* Mobile*/
@@ -145,10 +164,27 @@
         line-height: 1;
     }
 
+    .row-article-page {
+        flex-wrap: wrap-reverse;
+        row-gap: 40px;
+    }
+
+    .article-page-nav {
+        padding-top: 0;
+        flex-grow: 1;
+    }
+
+    .article-page-article h1 {
+        font-size: 42px;
+    }
+
+    .article-page-article {
+        font-size: 16px;
+    }
+
     .header-content p {
         font-size: 20px;
     }
-
     /* main*/
     .main {
         padding: 60px 0;
@@ -251,6 +287,11 @@
         font-size: 32px;
     }
 
+    .article-page-article h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
     .header-content p {
         font-size: 18px;
     }
@@ -276,6 +317,19 @@
         margin-bottom: 40px;
         flex-direction: column-reverse;
     } 
+
+    .main-row:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .main-content-header {
+        font-size: 34px;
+    }
+
+    .main-img {
+        width: 290px;
+        height: 150px;
+    }
 
     .cards-wrapper {
         row-gap: 20px;
@@ -305,20 +359,28 @@
     .card-title {
         font-size: 20px;
     }
-    
-    .main-row:nth-child(even) {
-        flex-direction: column-reverse;
+
+    .article-page-nav-list {
+        font-size: 16px;
     }
 
-    .main-content-header {
-        font-size: 34px;
+    .article-page-nav-list a {
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 
-    .main-img {
-        width: 290px;
-        height: 150px;
+    .article-page-article {
+        font-size: 22px;
     }
 
+    .article-page-article h1,
+    .article-page-article h2,
+    .article-page-article h3,
+    .article-page-article h4,
+    .article-page-article h5,
+    .article-page-article h6 {
+        line-height: normal;
+    }
     /* footer */
     .footer-row {
         flex-wrap: wrap-reverse;
