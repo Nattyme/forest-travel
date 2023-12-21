@@ -215,6 +215,23 @@
         row-gap: 40px;
     }
 
+    .contact-info {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .contact-block-body iframe {
+        width: 100%;
+    }
+
+    .form {
+        padding: 30px;
+    }
+
+    .form-group:last-of-type {
+        margin-bottom: 30px;
+    }
+
     .article-page-nav {
         padding-top: 0;
         flex-grow: 1;
