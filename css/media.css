@@ -134,9 +134,14 @@
     /* // tours-page*/
     
     /* tracking-page*/
+    .row-article-page {
+        column-gap: 30px;
+    }
+
     .article-page-article {
         width: 570px;
         font-size: 18px;
+        flex-grow: 2;
     }
 
     .article-page-article h1 {
@@ -146,6 +151,10 @@
 
     .article-page-article img  {
         margin: 20px 0;
+    }
+
+    .article-page-nav {
+        flex-grow: 1;
     }
 
     .article-page-nav-list {
@@ -333,6 +342,10 @@
 
     .article-page-article h1 {
         font-size: 42px;
+    }
+
+    .article-page-article img {
+        width: 100%;
     }
 
     .article-page-nav {
@@ -597,11 +610,10 @@
         margin-bottom: 10px;
     }
 
-    .footer-copyright {
-        padding: 0 14px;
-    }
-
     .footer-copyright p {
+        margin-left: 10px;
+        padding: 0 14px;
+        text-align: left;
         font-size: 14px;
     }
 
