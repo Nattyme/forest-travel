@@ -1,7 +1,7 @@
 /* Tablet */
 @media (max-width: 1199px) {
     .container {
-        max-width: 900px;
+        width: 900px;
     }
 
     /* header */
@@ -10,7 +10,12 @@
         height: 591px;
     }
 
-    .header-top,
+    .header-top {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+
     .header-content {
         padding-left: 15px;
         padding-right: 15px;
@@ -50,7 +55,6 @@
 
     .main-header {
         font-size: 50px;
-        line-height: 1;
     }
 
     .main-content-text {
@@ -62,10 +66,6 @@
         margin-bottom: 80px;
         gap: 30px;
     } 
-    
-    .main-header {
-        font-size: 50px;
-    }
 
     .main-img img {
         width: 100%;
@@ -74,7 +74,6 @@
     }
     /* // main-page */
     
-
     /* inner-pages */
     .inner-page {
         padding-bottom: 60px;
@@ -84,18 +83,34 @@
         margin-bottom: 40px;
     }
 
+    .inner-page .container {
+        width: 100%;
+    }
+
     /* tours-page */
+    .cards-row img {
+        width: 100%;
+        object-fit: cover;
+    }
+
     .standart-card {
         width: 420px;
+    }
+
+    .standart-card img {
+        height: 240px;
     }
 
     .wide-card {
         width: 495px;
     }
 
+    .wide-card img {
+        height: 210px;
+    }
+
     .high-card {
         width: 345px;
-        height: 570px;
     }
 
     .high-card img {
@@ -206,13 +221,12 @@
 /* Mobile */
 @media (max-width: 899px) {
     .container {
-        max-width: 600px;
+        width: 600px;
     }
 
     /* header */
-    .header-top,
     .header-content {
-        width: 600px;
+        width: 100%;
     }
 
     .header-title {
@@ -229,6 +243,10 @@
     .main {
         padding: 60px 0;
     } 
+
+    .main .container {
+        width: 100%;
+    }
 
     .main-row {
         margin-bottom: 60px;
@@ -265,6 +283,7 @@
     .inner-page {
         padding: 40px 0;
     }
+
     /* tours-page */
     .cards-wrapper {
         flex-direction: column;
@@ -283,11 +302,8 @@
         width: 100%;
     }
 
-    .standart-card img,
-    .wide-card img, 
     .high-card img {
-        width: 100%;
-        object-fit: cover;
+        height: 210px;
     }
     /* // tours-page */
 
@@ -346,6 +362,10 @@
         padding: 40px 0;
     }
 
+    .footer .container {
+        width: 100%;
+    }
+
     .footer-row {
         flex-direction: column-reverse;
         row-gap: 50px;
@@ -368,11 +388,6 @@
     }
 
     /* header */
-    .header-top,
-    .header-content {
-        width: 320px;
-    }
-
     .logo {
         font-size: 30px;
     }
@@ -390,6 +405,10 @@
     .main {
         padding: 40px 0;
     } 
+
+    .main .container {
+        width: 100%;
+    }
     
     .main-row {
         margin-bottom: 40px;
@@ -412,6 +431,14 @@
     /* // main-page */
     .inner-page-header {
         margin-bottom: 30px;
+    }
+
+    .inner-page .container {
+        width: 100%;
+    }
+
+    .inner-page-header .main-header {
+        font-size: 28px;
     }
 
     /* tours-page */
