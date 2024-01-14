@@ -39,40 +39,40 @@
   </head>
   <body>
     <header class="header-inner">
-      <div class="header-top">
-        <div class="logo">ФорестТревел</div>
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="header-nav-list-item">
-              <a class="header-nav-link" href="./index.html">Главная</a>
-            </li>
-            <li class="header-nav-list-item">
-              <a class="header-nav-link" href="./tours.html">Туры и направления</a>
-            </li>
-            <li class="header-nav-list-item">
-              <a class="header-nav-link" href="./404.html">О компании</a>
-            </li>
-            <li class="header-nav-list-item">
-              <a class="header-nav-link" href="./404.html">Галерея</a>
-            </li>
-            <li class="header-nav-list-item">
-              <a class="header-nav-link" href="./contacts.html">Контакты</a>
-            </li>
-          </ul>
-          <button class="header-nav-button">
-            <img src="./img/header/menu.svg" alt="меню">
-          </button>
-        </nav>
-      </div>
-    </header>
+        <div class="header-inner__top">
+          <div class="logo">ФорестТревел</div>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">Главная</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#!">Туры и направления</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./404.html">О компании</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./404.html">Галерея</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+            <button class="nav__button">
+              <img src="./img/header/menu.svg" alt="меню">
+            </button>
+          </nav>
+        </div>
+      </header>
 
     <main class="inner-page">
         <div class="container">
 
-            <div class="row-article-page">
-                <nav class="article-page-nav">
-                    <h3 class="article-page-nav-title">Туры и направления</h3>
-                    <ul class="article-page-nav-list">
+            <div class="article-page">
+                <nav class="article-page__nav">
+                    <h3 class="article-page__title">Туры и направления</h3>
+                    <ul class="article-page__list">
                         <li><a href="#!">Бесплатные туры</a></li>
                         <li><a href="#!">Невероятные приключения. Пункт длинной в две строки.</a></li>
                         <li><a href="#!">Экстремальный отдых</a></li>
@@ -81,7 +81,7 @@
                     </ul>
                 </nav>
 
-                <article class="article-page-article">
+                <article class="article-page__article">
                     <h1>Трекинг походы</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="text-bold">Ut enim ad minim</span> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#!" class="text-link">Duis aute irure</a> dolor in reprehenderit <span class="text-bold">in voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <img src="./img/articles/tracking-img.jpg" alt="Трекинг походы">
@@ -101,55 +101,55 @@
     </main>
     
     <footer class="footer">
-      <div class="container">
-        <div class="footer-row">
-          <div class="footer-copyright">
-            <div class="footer-logo">
-              <div class="logo">ФорестТревел</div>
+        <div class="container">
+          <div class="footer__row">
+            <div class="footer__copyright">
+              <div class="footer__logo">
+                <div class="logo">ФорестТревел</div>
+              </div>
+              <p>
+                При поддержке Управления по туризму Российской Федерации.
+                ФорестТревел. Все права защищены. Copyright © 2021
+              </p>
             </div>
-            <p>
-              При поддержке Управления по туризму Российской Федерации.
-              ФорестТревел. Все права защищены. Copyright © 2021
-            </p>
-          </div>
-
-          <div class="footer-widgets-wrapper">
-            <div class="footer-widget footer-widget-info">
-              <h3 class="footer-widget-title">Информация</h3>
-              <ul class="footer-widget-list">
-                <li><a href="./index.html">Главная</a></li>
-                <li><a href="./404.html">О компании</a></li>
-                <li><a href="./404.html">Галерея</a></li>
-                <li><a href="./404.html">Блог</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-widget footer-widget-services">
-              <h3 class="footer-widget-title">Услуги</h3>
-              <ul class="footer-widget-list">
-                <li><a href="./404.html">Бесплатные туры</a></li>
-                <li><a href="./404.html">Невероятные приключения</a></li>
-                <li><a href="./404.html">Экстремальный отдых</a></li>
-                <li><a href="./404.html">Экзотические джунгли</a></li>
-                <li><a href="#!">Трекинг походы</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-widget footer-widget-contacts">
-              <h3 class="footer-widget-title">Контакты</h3>
-              <ul class="footer-widget-list">
-                <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
-                <li>
-                  <a href="mailto:info@foresttravel.com"
-                    >info@foresttravel.com</a
-                  >
-                </li>
-                <li>г. Москва, Рязанский проспект 54, офис 112.</li>
-              </ul>
+  
+            <div class="footer-widgets-wrapper">
+              <div class="footer-widget footer-widget-info">
+                <h3 class="footer-widget-title">Информация</h3>
+                <ul class="footer-widget-list">
+                  <li><a href="./index.html">Главная</a></li>
+                  <li><a href="./404.html">О компании</a></li>
+                  <li><a href="./404.html">Галерея</a></li>
+                  <li><a href="./404.html">Блог</a></li>
+                </ul>
+              </div>
+  
+              <div class="footer-widget footer-widget-services">
+                <h3 class="footer-widget-title">Услуги</h3>
+                <ul class="footer-widget-list">
+                  <li><a href="./404.html">Бесплатные туры</a></li>
+                  <li><a href="./404.html">Невероятные приключения</a></li>
+                  <li><a href="./404.html">Экстремальный отдых</a></li>
+                  <li><a href="./404.html">Экзотические джунгли</a></li>
+                  <li><a href="./tracking.html">Трекинг походы</a></li>
+                </ul>
+              </div>
+  
+              <div class="footer-widget footer-widget-contacts">
+                <h3 class="footer-widget-title">Контакты</h3>
+                <ul class="footer-widget-list">
+                  <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
+                  <li>
+                    <a href="mailto:info@foresttravel.com"
+                      >info@foresttravel.com</a
+                    >
+                  </li>
+                  <li>г. Москва, Рязанский проспект 54, офис 112.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>

@@ -1,0 +1,12 @@
+.header-nav {
+  font-size: 22px;
+}
+
+.header-nav-button {
+  display: none;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 50px;
+}/*# sourceMappingURL=nav.css.map */

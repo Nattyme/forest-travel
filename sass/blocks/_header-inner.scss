@@ -1,0 +1,20 @@
+.header-inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+    background-image: url(./../img/header/header-small-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #265847;
+    color: #fff;
+}
+
+.header-inner__top {
+    margin: 0 auto;
+    width: 1170px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
