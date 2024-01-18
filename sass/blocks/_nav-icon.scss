@@ -28,11 +28,11 @@
     }
 
     &::before {
-        top: -($lineHeight * 2);
+        top: -12px;
     }
 
     &::after {
-        top: $lineHeight * 2;
+        top: 12px;
     }
 }
 
