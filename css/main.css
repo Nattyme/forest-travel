@@ -227,6 +227,11 @@ a.button:hover, .button:hover {
   top: 9.2px;
 }
 
+.nav-icon.nav-icon--active {
+  position: relative;
+  z-index: 999;
+}
+
 .nav-icon.nav-icon--active .nav-icon__middle {
   background-color: transparent;
 }
@@ -260,7 +265,7 @@ a.button:hover, .button:hover {
 }
 
 .nav-mobile.nav-mobile--active {
-  display: fixed;
+  z-index: 99;
 }
 
 .nav-mobile {
@@ -561,6 +566,7 @@ a.button:hover, .button:hover {
 }
 
 .header-content {
+  z-index: 9;
   padding-top: 26px;
   position: absolute;
   top: 50%;

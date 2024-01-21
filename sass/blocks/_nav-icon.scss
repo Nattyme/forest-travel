@@ -49,6 +49,11 @@ $height: 38px;
 
 
 // Active state
+.nav-icon.nav-icon--active {
+    position: relative;
+    z-index: 999;
+}
+
 .nav-icon.nav-icon--active .nav-icon__middle {
     background-color: transparent;
 
@@ -65,3 +70,4 @@ $height: 38px;
         transform: rotate(-45deg);
     }
 }
+

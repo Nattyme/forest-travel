@@ -20,7 +20,7 @@
 }
 
 .nav-mobile.nav-mobile--active {
-    display: fixed;
+    z-index: 99;
 }
 
 
