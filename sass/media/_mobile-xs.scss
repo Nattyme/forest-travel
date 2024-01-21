@@ -108,11 +108,15 @@
 
     .article-page-article {
         width: 290px;
-    }
 
-    .article-page-article h1 {
-        margin-bottom: 10px;
-        font-size: 28px;
+        h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        img {
+            margin: 22px 0;
+        }
     }
 
     .article-page-article h1,
@@ -125,17 +129,18 @@
     }
 
     .article-page-nav-title {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        font-size: 22px;
     }
 
     .article-page-nav-list {
         font-size: 16px;
+        a {
+            padding-top: 6px;
+            padding-bottom: 9px;
+        }
     }
 
-    .article-page-nav-list a {
-        padding-top: 7px;
-        padding-bottom: 7px;
-    }
     /* //tracking-page */
 
     /* contacts-page */

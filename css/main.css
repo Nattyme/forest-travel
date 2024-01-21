@@ -989,7 +989,7 @@ a.text-link {
     font-size: 50px;
   }
   .article-page-article img {
-    margin: 20px 0;
+    margin: 31px 0;
   }
   .article-page-nav {
     flex-grow: 1;
@@ -1288,6 +1288,9 @@ a.text-link {
     margin-bottom: 10px;
     font-size: 28px;
   }
+  .article-page-article img {
+    margin: 22px 0;
+  }
   .article-page-article h1,
   .article-page-article h2,
   .article-page-article h3,
@@ -1297,14 +1300,15 @@ a.text-link {
     line-height: normal;
   }
   .article-page-nav-title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 22px;
   }
   .article-page-nav-list {
     font-size: 16px;
   }
   .article-page-nav-list a {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 6px;
+    padding-bottom: 9px;
   }
   /* //tracking-page */
   /* contacts-page */
