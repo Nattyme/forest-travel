@@ -50,7 +50,9 @@ $height: 38px;
 
 // Active state
 .nav-icon.nav-icon--active {
-    position: relative;
+    position: fixed;
+    top: 55px;
+    right: 15px;
     z-index: 999;
 }
 

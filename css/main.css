@@ -228,7 +228,9 @@ a.button:hover, .button:hover {
 }
 
 .nav-icon.nav-icon--active {
-  position: relative;
+  position: fixed;
+  top: 55px;
+  right: 15px;
   z-index: 999;
 }
 
@@ -261,7 +263,7 @@ a.button:hover, .button:hover {
   margin-right: 0;
 }
 .nav-mobile a:hover {
-  color: #358bee;
+  text-decoration: underline;
 }
 
 .nav-mobile.nav-mobile--active {
@@ -269,6 +271,10 @@ a.button:hover, .button:hover {
 }
 
 .nav-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: -100%;
   left: 0;
@@ -276,10 +282,6 @@ a.button:hover, .button:hover {
   height: 100%;
   background-color: #2d2d2d;
   opacity: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   transition: opacity 0.2s ease-in, top 0s linear 0.2s;
 }
 
@@ -292,7 +294,7 @@ a.button:hover, .button:hover {
 
 .nav-mobile.nav-mobile--active {
   top: 0;
-  opacity: 0.8;
+  opacity: 0.9;
   transition: top 0s linear, opacity 0.2s ease-in;
 }
 
