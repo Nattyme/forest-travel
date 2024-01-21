@@ -10,4 +10,10 @@ a.button, .button {
     line-height: 50px;
     font-weight: 700;
     color: #fff;
+
+    transition: box-shadow 0.2s ease-in;
+
+    &:hover {
+        box-shadow: 0px 0px 30px 0px rgba(24, 219, 148, 0.813);   
+    }
 }

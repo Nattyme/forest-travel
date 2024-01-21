@@ -1,53 +1,31 @@
-/* Cards */
-.cards-row {
-    display: flex;
-    gap: 30px;
-}
-
-.cards-row__column {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-/* Card */
-.card {
+.standart-card {
     width: 570px;
+}
+
+.wide-card {
+    width: 670px;
+}
+
+.high-card {
+    width: 470px;
+}
+
+.standart-card, 
+.wide-card,
+.high-card {
     text-decoration: none;
     color: #fff;
 
     transition: opacity 0.2s ease-in;
-
-    &:hover {
-        opacity: 0.8;
-    }
-
-    &--wide {
-        width: 670px;
-    }
-
-    &--high {
-        width: 470px;
-    }
-
-    &--extreme-color .card__content {
-        background-color: #c1b19b;
-    }
-
-    &--adventures-color .card__content {
-        background-color: #66b0be;
-    }
-
-    &--hiking-color .card__content {
-        background-color: #876f56;
-    }
-
-    &--exotic-color .card__content {
-        background-color: #27695e;
-    }
 }
 
-.card__content {
+.standart-card:hover, 
+.wide-card:hover,
+.high-card:hover {
+    opacity: 0.8;
+}
+
+.card-title-wrapper {
     padding: 0 30px;
 
     display: flex;
@@ -61,9 +39,25 @@
     white-space: nowrap;
 }
 
-.card__title {
+.card-title {
     font-size: 28px;
     font-weight: 700;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.extreme-color {
+    background-color: #c1b19b;
+}
+
+.adventures-color {
+    background-color: #66b0be;
+}
+
+.hiking-color {
+    background-color: #876f56;
+}
+
+.exotic-color {
+    background-color: #27695e;
 }

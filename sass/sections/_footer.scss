@@ -11,21 +11,21 @@
     text-decoration: underline;
 }
 
-.footer__row {
+.footer-row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.footer__copyright {
+.footer-copyright {
     width: 270px;
 }
 
-.footer__logo {
+.footer-logo {
     margin-bottom: 26px;
 }
 
-.footer__copyright p {
+.footer-copyright p {
     font-size: 16px;
     line-height: 1.6; 
 }

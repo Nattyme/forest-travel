@@ -1,28 +1,25 @@
-// base
-@import "./base/vars";
+// Base
 @import "./base/reset";
 @import "./base/base";
 
-// blocks 
+// Blocks 
 @import "./blocks/button";
 @import "./blocks/logo";
-@import "./blocks/nav";
-@import "./blocks/nav-icon";
-@import "./blocks/title";
+@import "./blocks/inner-page-header";
 @import "./blocks/card";
 @import "./blocks/form";
-@import "./blocks/form-group";
 
-// sections
-@import "./blocks/header";
-@import "./blocks/header-inner";
-@import "./blocks/main";
-@import "./blocks/inner-page";
-@import "./blocks/article-page";
-@import "./blocks/contacts";
-@import "./blocks/footer";
+// Sections
+@import "./sections/header";
+@import "./sections/header-inner";
+@import "./sections/main";
+@import "./sections/inner-page";
+@import "./sections/cards";
+@import "./sections/article-page";
+@import "./sections/contacts";
+@import "./sections/footer";
 
-// media 
+// Media 
 @import "./media/tablet";
 @import "./media/mobile";
 @import "./media/mobile-xs";

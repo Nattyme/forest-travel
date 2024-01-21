@@ -40,30 +40,28 @@
   </head>
   <body>
     <header class="header-inner">
-      <div class="header-inner__top">
+      <div class="header-top">
         <div class="logo">ФорестТревел</div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="./index.html">Главная</a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./index.html">Главная</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#!">Туры и направления</a>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="#!">Туры и направления</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./404.html">О компании</a>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./404.html">О компании</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./404.html">Галерея</a>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./404.html">Галерея</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./contacts.html">Контакты</a>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./contacts.html">Контакты</a>
             </li>
           </ul>
-          <button class="nav__button">
-            <div class="nav-icon">
-                <div class="nav-icon__middle"></div>
-            </div>
+          <button class="header-nav-button">
+            <img src="./img/header/menu.svg" alt="меню">
           </button>
         </nav>
       </div>
@@ -71,18 +69,18 @@
     
     <main class="inner-page">
       <div class="container">
-        <div class="inner-page__header">
-          <h1 class="title">Туры и направления</h1>
+        <div class="inner-page-header">
+          <h1 class="main-header">Туры и направления</h1>
         </div>
 
         <!-- cards wrapper -->
-        <div class="inner-page__cards-row">
+        <div class="cards-wrapper">
           <!-- row -->
           <div class="cards-row">
-            <a class="card" href="#!">
-              <picture class="card__img"><img src="./img/cards/card-01.jpg" alt="Бесплатные туры"></picture>
-              <div class="card__content">
-                <h2 class="card__title">
+            <a class="standart-card" href="#!">
+              <picture><img src="./img/cards/card-01.jpg" alt="Бесплатные туры"></picture>
+              <div class="card-title-wrapper">
+                <h2 class="card-title">
                   Бесплатные туры Lorem ipsum dolor sit amet consectetur
                   adipisicing elit. Accusantium, cupiditate sequi laboriosam eum
                   tenetur in? Amet, autem quos repudiandae minima quibusdam
@@ -92,38 +90,37 @@
               </div>
             </a>
 
-            <a class="card card--extreme-color" href="#!">
-              <picture class="card__img"><img src="./img/cards/card-02.jpg" alt="Невероятные приключения"></picture>
-              <div class="card__content">
-                <h2 class="card__title">Невероятные приключения</h2>
+            <a class="standart-card" href="#!">
+              <picture><img src="./img/cards/card-02.jpg" alt="Невероятные приключения"></picture>
+              <div class="card-title-wrapper extreme-color">
+                <h2 class="card-title">Невероятные приключения</h2>
               </div>
             </a>
           </div>
           <!-- // row -->
           <!-- row -->
           <div class="cards-row">
-            <div class="cards-row__column">
-
-              <a class="card card--wide card--adventures-color" href="./tracking.html">
-                <picture class="card__img"><img src="./img/cards/card-03.jpg" alt="Трекинг походы"></picture>
-                <div class="card__content">
-                  <h2 class="card__title">Трекинг походы</h2>
+            <div class="cards-column">
+              <a class="wide-card" href="./tracking.html">
+                <picture><img src="./img/cards/card-03.jpg" alt="Трекинг походы"></picture>
+                <div class="card-title-wrapper adventures-color">
+                  <h2 class="card-title">Трекинг походы</h2>
                 </div>
               </a>
 
-              <a class="card card--wide card--hiking-color" href="#!">
+              <a class="wide-card" href="#!">
                 <picture><img src="./img/cards/card-04.jpg" alt="Экстремальный отдых"></picture>
-                <div class="card__content">
-                  <h2 class="card__title">Экстремальный отдых</h2>
+                <div class="card-title-wrapper hiking-color">
+                  <h2 class="card-title">Экстремальный отдых</h2>
                 </div>
               </a>
             </div>
 
-            <div class="cards-row__column">
-              <a class="card card--high card--exotic-color" href="#!">
-                <picture class="card__img"><img src="./img/cards/card-05.jpg" alt="Экзотические джунгли"></picture>
-                <div class="card__content">
-                  <h2 class="card__title">Экзотические джунгли</h2>
+            <div class="cards-column">
+              <a class="high-card" href="#!">
+                <picture><img src="./img/cards/card-05.jpg" alt="Экзотические джунгли"></picture>
+                <div class="card-title-wrapper exotic-color">
+                  <h2 class="card-title">Экзотические джунгли</h2>
                 </div>
               </a>
             </div>
@@ -136,9 +133,9 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__row">
-          <div class="footer__copyright">
-            <div class="footer__logo">
+        <div class="footer-row">
+          <div class="footer-copyright">
+            <div class="footer-logo">
               <div class="logo">ФорестТревел</div>
             </div>
             <p>

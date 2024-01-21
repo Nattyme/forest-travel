@@ -1,26 +1,27 @@
+/* Tablet */
 @media (max-width: 1199px) {
     /* header */
     .header {
         height: 591px;
     }
 
-    .header__top {
+    .header-top {
         padding-left: 15px;
         padding-right: 15px;
         width: 100%;
     }
 
-    .header__content {
+    .header-content {
         padding-left: 15px;
         padding-right: 15px;
         width: 900px;
     }
 
-    .nav__button {
+    .header-nav-button {
         display: block;
     }
 
-    .nav__list {
+    .header-nav-list {
         display: none;
     }
 
@@ -28,7 +29,7 @@
         font-size: 52px;
     }
 
-    a.header__scroll {
+    a.header-scroll {
         font-size: 0;
     }
 
@@ -37,34 +38,34 @@
         padding: 80px 0 82px;
     } 
 
-    .main__content {
+    .main-content {
         width: 420px;
     }
 
-    .main__img {
+    .main-img {
         width: 420px;
         height: 362px;
     }
 
-    .main__content .main__header {
+    .main-content-header .main-header {
         line-height: 1;
     }
 
-    .main__header {
+    .main-header {
         font-size: 50px;
     }
 
-    .main__text {
+    .main-content-text {
         margin-bottom: 20px;
         font-size: 18px;
     }
 
-    .main__row {
+    .main-row {
         margin-bottom: 80px;
         column-gap: 30px;
     } 
 
-    .main__img img {
+    .main-img img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -79,7 +80,7 @@
         display: none;
     } 
 
-    .footer__copyright {
+    .footer-copyright {
         width: 225px;
     }
 

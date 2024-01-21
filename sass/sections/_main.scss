@@ -3,7 +3,7 @@
     flex-grow: 1;
 }
 
-.main__row {
+.main-row {
     margin-bottom: 120px;
 
     display: flex;
@@ -19,15 +19,15 @@
     }
 }
 
-.main__content {
+.main-content {
     width: 470px;
 }
 
-.main__header {
+.main-content-header {
     margin-bottom: 20px;
 }
 
-.main__text {
+.main-content-text {
     margin-bottom: 40px;
 
     font-size: 20px;
@@ -43,10 +43,10 @@ a.text-link {
     font-weight: 700;
 }
 
-.main__text p {
+.main-content-text p {
     margin-bottom: 15px;
 }
 
-.main__img {
+.main-img {
     width: 570px;
 }
