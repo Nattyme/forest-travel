@@ -39,6 +39,28 @@
 .header-nav-list {
     display: flex;
     gap: 50px;
+
+}
+
+.header-nav-link {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -2px;
+        left: 0;
+
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+
+        transition: width 0.2s ease-in;
+    }
+
+    &:hover.header-nav-link::after {
+        width: 100%;
+    }
 }
 
 .header-nav-button  {

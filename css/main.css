@@ -559,6 +559,23 @@ a.button:hover, .button:hover {
   gap: 50px;
 }
 
+.header-nav-link {
+  position: relative;
+}
+.header-nav-link::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.2s ease-in;
+}
+.header-nav-link:hover.header-nav-link::after {
+  width: 100%;
+}
+
 .header-nav-button {
   width: 38px;
   height: 38px;
