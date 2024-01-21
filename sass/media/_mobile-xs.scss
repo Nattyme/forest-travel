@@ -77,20 +77,23 @@
         row-gap: 20px;
     }
 
-    .standart-card,
-    .wide-card, 
-    .high-card {
-        height: 290px;
-    }
+    .standart-card {
+        img {
+            height: 240px;
+        }
+    } 
 
-    .standart-card img,
-    .wide-card img, 
-    .high-card img {
-        height: 240px;
+    .wide-card,
+    .high-card {
+        img {
+            height: 210px;
+        }
     }
 
     .card-title-wrapper {
         height: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .card-title {

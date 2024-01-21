@@ -22,8 +22,12 @@
         }
     }
 
-    .header-inner .logo {
-        font-size: 30px;
+    .header-inner {
+        height: 80px;
+
+        .logo {
+            font-size: 30px;
+        }
     }
 
     /* main-page */
@@ -109,12 +113,15 @@
         font-size: 16px;
     }
 
-    .article-page-article h1 {
-        font-size: 42px;
-    }
+    .article-page-article {
+        h1 {
+            font-size: 42px;
+        }
 
-    .article-page-article img {
-        width: 100%;
+        img {
+            width: 100%;
+        }
+        
     }
 
     .article-page-nav {
