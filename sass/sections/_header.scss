@@ -36,16 +36,21 @@
     font-size: 22px;
 }
 
-.header-nav-button {
-    display: none;
-}
-
 .header-nav-list {
     display: flex;
     gap: 50px;
 }
 
+.header-nav-button  {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-content {
+    padding-top: 26px;
     position: absolute;
     top: 50%; 
     
@@ -54,20 +59,18 @@
 
     width: 1170px;
     text-align: center;
+
+    p {
+        font-size: 24px;
+    }
 }
 
 .header-title {
-    margin-bottom: 20px;
+    margin-bottom: 29px;
 
     font-size: 60px;
     line-height: 1;
     font-weight: 700;
-}
-
-.header-content {
-    p {
-        font-size: 24px;
-    }
 }
 
 .header-scroll {
@@ -87,7 +90,7 @@
         position: absolute;
         bottom: 0; 
         left: 50%;
-        transform: translateX(-50%); 
+        transform: translateX(-42%); 
         
 
         content: "";
