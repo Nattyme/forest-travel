@@ -92,51 +92,7 @@
     }
 
     /* tours-page */
-    .cards-row {
-        img {
-            width: 100%;
-            object-fit: cover;
-        } 
-    }
-
-    .cards-column {
-        flex-grow: 1;
-    }
-
-    .standart-card {
-        width: 420px;
-        flex-grow: 1;
-
-        img {
-            height: 240px;
-        }
-    }
-
-    .wide-card {
-        width: 495px;
-        flex-grow: 1;
-
-        img {
-            height: 210px;
-        }
-    }
-
-    .high-card {
-        width: 345px;
-
-        img {
-            height: 510px;
-        }
-    }
-
-    .card-title-wrapper {
-        padding: 0 20px;
-        height: 60px;
-    }
-
-    .card-title {
-        font-size: 24px;
-    }
+   
     /* // tours-page*/
     
     /* tracking-page*/
