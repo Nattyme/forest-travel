@@ -72,34 +72,23 @@
         row-gap: 20px;
     }
 
-    .cards-row,
-    .cards-column {
+    .card-title-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 50px;
+    }
+
+    .cards-row {
         row-gap: 20px;
     }
 
-    .standart-card {
-        img {
-            height: 240px;
-        }
-    } 
-
-    .wide-card,
-    .high-card {
-        img {
-            height: 210px;
-        }
-    }
-
-    .card-title-wrapper {
-        height: 50px;
-        padding-left: 15px;
-        padding-right: 15px;
+    .cards-column {
+        row-gap: 20px;
     }
 
     .card-title {
         font-size: 20px;
     }
-    /* // tours-page */
 
     /* tracking-page */
     .row-article-page {
