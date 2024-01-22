@@ -166,9 +166,16 @@
     }
 
     .contact-list {
+        padding-top: 5px;
+        
         li {
             font-size: 18px;
         }
+    }
+
+    .contact-list-icon::before {
+        top: 2px;
+        left: 2px;
     }
 
     .contact-map {
@@ -178,6 +185,16 @@
 
     .form {
         width: 100%;
+    }
+
+    .input {
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+
+    .form-group-row input:last-child {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     /* Footer */
