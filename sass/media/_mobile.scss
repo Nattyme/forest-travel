@@ -81,10 +81,6 @@
     }
 
     /* tours-page */
-    .cards-wrapper {
-        align-items: stretch;
-    }
-
     .cards-row {
         flex-direction: column;
         column-gap: 0;
@@ -94,11 +90,7 @@
     .standart-card,
     .wide-card,
     .high-card {
-        width: 100%;
-
-        img {
-            width: 100%;
-        }
+        width: 570px;
     }
 
     .card-title-wrapper {
@@ -144,6 +136,11 @@
 
     .contact-block-body iframe {
         width: 100%;
+    }
+
+    .contact-map {
+        width: 570px;
+        height: 310px;
     }
 
     .form {
