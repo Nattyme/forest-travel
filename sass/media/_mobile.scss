@@ -82,26 +82,28 @@
 
     /* tours-page */
     .cards-wrapper {
-        flex-direction: column;
-        row-gap: 30px;
+        align-items: stretch;
     }
 
-    .cards-row,
-    .cards-column {
+    .cards-row {
         flex-direction: column;
-        row-gap: 30px;
-    }
-
-    .high-card img {
-        height: 210px;
+        column-gap: 0;
+        row-gap: 30px
     }
 
     .standart-card,
-    .wide-card, 
+    .wide-card,
     .high-card {
         width: 100%;
+
+        img {
+            width: 100%;
+        }
     }
-    /* // tours-page */
+
+    .card-title-wrapper {
+        max-width: 899px;
+    }
 
     /* tracking-page */
     .row-article-page {

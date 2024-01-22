@@ -1188,23 +1188,27 @@ a.text-link {
   }
   /* tours-page */
   .cards-wrapper {
-    flex-direction: column;
-    row-gap: 30px;
+    align-items: stretch;
   }
-  .cards-row,
-  .cards-column {
+  .cards-row {
     flex-direction: column;
+    -moz-column-gap: 0;
+         column-gap: 0;
     row-gap: 30px;
-  }
-  .high-card img {
-    height: 210px;
   }
   .standart-card,
   .wide-card,
   .high-card {
     width: 100%;
   }
-  /* // tours-page */
+  .standart-card img,
+  .wide-card img,
+  .high-card img {
+    width: 100%;
+  }
+  .card-title-wrapper {
+    max-width: 899px;
+  }
   /* tracking-page */
   .row-article-page {
     flex-wrap: wrap-reverse;
