@@ -8,12 +8,12 @@
 .cards-row {
     display: flex;
     /* justify-content: space-between; */
-    gap: 30px;
+    column-gap: 30px;
 }
 
 .cards-column {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    gap: 30px;
+    row-gap: 30px;
 }

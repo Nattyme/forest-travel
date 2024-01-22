@@ -686,14 +686,15 @@ a.text-link {
 .cards-row {
   display: flex;
   /* justify-content: space-between; */
-  gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .cards-column {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
-  gap: 30px;
+  row-gap: 30px;
 }
 
 /* Article page*/
@@ -1013,7 +1014,26 @@ a.text-link {
     width: 100%;
   }
   /* tours-page */
-  /* // tours-page*/
+  .cards-wrapper {
+    align-items: center;
+  }
+  .standart-card {
+    width: 420px;
+  }
+  .wide-card {
+    width: 495px;
+  }
+  .high-card {
+    width: 345px;
+  }
+  .card-title-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+  }
+  .card-title {
+    font-size: 24px;
+  }
   /* tracking-page*/
   .row-article-page {
     -moz-column-gap: 30px;
