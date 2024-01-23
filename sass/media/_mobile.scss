@@ -1,5 +1,9 @@
 /* Mobile */
 @media (max-width: 899px) {
+    .header {
+        @include bgImage("./../img/header/header-bg-mobile.jpg");
+    }
+
     .header__content {
         padding-top: 0;
         width: 100%;
@@ -17,6 +21,7 @@
 
     .header-inner {
         height: 80px;
+        @include bgImage("./../img/header/header-small-bg-mobile.jpg");
 
         .logo {
             font-size: 30px;

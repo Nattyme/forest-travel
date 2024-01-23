@@ -4,9 +4,7 @@
     padding-top: 50px;
     height: 800px;
 
-    background-image: url(./../img/header/header-bg.jpg);
-    background-position: center;
-    background-size: cover;
+    @include bgImage("./../img/header/header-bg.jpg");
     background-color: #265847;
     color: #fff;
 }

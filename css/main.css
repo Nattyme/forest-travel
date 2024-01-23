@@ -150,6 +150,16 @@ legend {
   }
 }
 
+.main {
+  padding: 120px 0;
+  flex-grow: 1;
+}
+
+.inner-page {
+  padding: 60px 0 100px;
+  background-color: #f2f8f6;
+}
+
 a.button, .button {
   height: 50px;
   padding-left: 40px;
@@ -672,9 +682,10 @@ a.button:hover, .button:hover {
   position: relative;
   padding-top: 50px;
   height: 800px;
-  background-image: url(./../img/header/header-bg.jpg);
+  background-image: url("./../img/header/header-bg.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-color: #265847;
   color: #fff;
 }
@@ -741,38 +752,33 @@ a.button:hover, .button:hover {
   color: #fff;
 }
 
-.main {
-  padding: 120px 0;
-  flex-grow: 1;
-}
-
-.main__row {
+.main-page__row {
   margin-bottom: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.main__row:nth-child(even) {
+.main-page__row:nth-child(even) {
   flex-direction: row-reverse;
 }
-.main__row:last-child {
+.main-page__row:last-child {
   margin-bottom: 0;
 }
 
-.main__content {
+.main-page__content {
   width: 470px;
 }
 
-.main__header {
+.main-page__header {
   margin-bottom: 20px;
 }
 
-.main__text {
+.main-page__text {
   margin-bottom: 40px;
   font-size: 20px;
   line-height: 1.6;
 }
-.main__text p {
+.main-page__text p {
   margin-bottom: 15px;
 }
 
@@ -785,18 +791,8 @@ a.text-link {
   font-weight: 700;
 }
 
-.main__img {
+.main-page__img {
   width: 570px;
-}
-
-.inner-page {
-  padding: 60px 0 100px;
-  background-color: #f2f8f6;
-}
-
-.inner-page__header {
-  margin-bottom: 60px;
-  text-align: center;
 }
 
 .cards__header {
@@ -924,25 +920,22 @@ a.text-link {
   .inner-page {
     padding-bottom: 60px;
   }
-  .main__row {
+  .main-page__row {
     margin-bottom: 80px;
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
-  .main__content {
+  .main-page__content {
     width: 420px;
   }
-  .main__header .main-header {
+  .main-page__header .main-header {
     line-height: 1;
   }
-  .inner-page__header {
-    margin-bottom: 40px;
-  }
-  .main__img {
+  .main-page__img {
     width: 420px;
     height: 362px;
   }
-  .main__img img {
+  .main-page__img img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -951,7 +944,7 @@ a.text-link {
   .title {
     font-size: 50px;
   }
-  .main__text {
+  .main-page__text {
     margin-bottom: 20px;
     font-size: 18px;
   }
@@ -1065,6 +1058,12 @@ a.text-link {
 }
 /* Mobile */
 @media (max-width: 899px) {
+  .header {
+    background-image: url("./../img/header/header-bg-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .header__content {
     padding-top: 0;
     width: 100%;
@@ -1079,6 +1078,10 @@ a.text-link {
   }
   .header-inner {
     height: 80px;
+    background-image: url("./../img/header/header-small-bg-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .header-inner .logo {
     font-size: 30px;
@@ -1093,25 +1096,25 @@ a.text-link {
   .inner-page {
     padding: 40px 0;
   }
-  .main__row {
+  .main-page__row {
     margin-bottom: 60px;
     row-gap: 20px;
     flex-direction: row-reverse;
   }
-  .main__row:nth-child(even) {
+  .main-page__row:nth-child(even) {
     flex-direction: row-reverse;
   }
   .title {
     font-size: 42px;
   }
-  .main__content {
+  .main-page__content {
     width: auto;
   }
-  .main__text {
+  .main-page__text {
     margin-bottom: 20px;
     font-size: 16px;
   }
-  .main__img {
+  .main-page__img {
     flex-shrink: 0;
     width: 170px;
     height: 393px;
@@ -1233,26 +1236,20 @@ a.text-link {
   .inner-page .container {
     width: 100%;
   }
-  .main__row {
+  .main-page__row {
     margin-bottom: 40px;
     flex-direction: column-reverse;
   }
-  .main__row:nth-child(even) {
+  .main-page__row:nth-child(even) {
     flex-direction: column-reverse;
-  }
-  .inner-page__header {
-    margin-bottom: 30px;
-  }
-  .inner-page__header .main-header {
-    font-size: 28px;
   }
   .title {
     font-size: 34px;
   }
-  .main__text p {
+  .main-page__text p {
     margin-bottom: 0;
   }
-  .main__img {
+  .main-page__img {
     width: auto;
     height: 150px;
   }

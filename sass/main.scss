@@ -1,4 +1,5 @@
 // Base
+@import "./base/mixins";
 @import "./base/reset";
 @import "./base/base";
 
@@ -19,7 +20,7 @@
 // Sections
 @import "./sections/header";
 @import "./sections/header-inner";
-@import "./sections/main";
+@import "./sections/main-page";
 @import "./sections/cards";
 @import "./sections/article-page";
 @import "./sections/contacts";
