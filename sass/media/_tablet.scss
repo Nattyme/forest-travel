@@ -83,33 +83,32 @@
     }
 
     /* tours-page */
-    .cards-wrapper {
+    .cards {
         align-items: center;
     }
 
-    .standart-card {
+    .card {
         width: 420px;
+
+        &--wide {
+            width: 495px;
+        }
+
+        &--high {
+            width: 345px;
+        }
     }
 
-    .wide-card {
-        width: 495px;
-    }
-
-    .high-card {
-        width: 345px;
-    }
-
-    .card-title-wrapper {
+    .card__title-wrapper {
         padding-left: 20px;
         padding-right: 20px;
         height: 60px;
     }
 
-    .card-title {
+    .card__title {
         font-size: 24px;
     }
    
-    
     /* tracking-page*/
     .row-article-page {
         column-gap: 30px;

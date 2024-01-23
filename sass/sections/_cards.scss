@@ -1,17 +1,16 @@
-/* Cards */
-.cards-wrapper {
+.cards {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
 
-.cards-row {
+.cards__row {
     display: flex;
     /* justify-content: space-between; */
     column-gap: 30px;
 }
 
-.cards-column {
+.cards__column {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */

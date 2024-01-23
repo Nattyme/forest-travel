@@ -308,32 +308,23 @@ a.button:hover, .button:hover {
   color: #31405B;
 }
 
-.standart-card {
+.card {
   width: 570px;
-}
-
-.wide-card {
-  width: 670px;
-}
-
-.high-card {
-  width: 470px;
-}
-
-.standart-card,
-.wide-card,
-.high-card {
   text-decoration: none;
   color: #fff;
   transition: opacity 0.2s ease-in;
 }
-.standart-card:hover,
-.wide-card:hover,
-.high-card:hover {
+.card:hover {
   opacity: 0.8;
 }
+.card--wide {
+  width: 670px;
+}
+.card--high {
+  width: 470px;
+}
 
-.card-title-wrapper {
+.card__title-wrapper {
   padding: 0 30px;
   display: flex;
   align-items: center;
@@ -343,28 +334,24 @@ a.button:hover, .button:hover {
   overflow: hidden;
   white-space: nowrap;
 }
+.card__title-wrapper--extreme {
+  background-color: #c1b19b;
+}
+.card__title-wrapper--adventures {
+  background-color: #66b0be;
+}
+.card__title-wrapper--hiking {
+  background-color: #876f56;
+}
+.card__title-wrapper--exotic {
+  background-color: #27695e;
+}
 
-.card-title {
+.card__title {
   font-size: 28px;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-
-.extreme-color {
-  background-color: #c1b19b;
-}
-
-.adventures-color {
-  background-color: #66b0be;
-}
-
-.hiking-color {
-  background-color: #876f56;
-}
-
-.exotic-color {
-  background-color: #27695e;
 }
 
 .form {
@@ -688,21 +675,20 @@ a.text-link {
   text-align: center;
 }
 
-/* Cards */
-.cards-wrapper {
+.cards {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
 }
 
-.cards-row {
+.cards__row {
   display: flex;
   /* justify-content: space-between; */
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
 
-.cards-column {
+.cards__column {
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
@@ -981,24 +967,24 @@ a.text-link {
     font-size: 18px;
   }
   /* tours-page */
-  .cards-wrapper {
+  .cards {
     align-items: center;
   }
-  .standart-card {
+  .card {
     width: 420px;
   }
-  .wide-card {
+  .card--wide {
     width: 495px;
   }
-  .high-card {
+  .card--high {
     width: 345px;
   }
-  .card-title-wrapper {
+  .card__title-wrapper {
     padding-left: 20px;
     padding-right: 20px;
     height: 60px;
   }
-  .card-title {
+  .card__title {
     font-size: 24px;
   }
   /* tracking-page*/
@@ -1131,20 +1117,20 @@ a.text-link {
   .main__row:nth-child(even) {
     flex-direction: row-reverse;
   }
+  .title {
+    font-size: 42px;
+  }
   .main__content {
     width: auto;
   }
-  .title {
-    font-size: 42px;
+  .main__text {
+    margin-bottom: 20px;
+    font-size: 16px;
   }
   .main__img {
     flex-shrink: 0;
     width: 170px;
     height: 393px;
-  }
-  .main__text {
-    margin-bottom: 20px;
-    font-size: 16px;
   }
   a.button, .button {
     padding-left: 35px;
@@ -1154,18 +1140,16 @@ a.text-link {
     line-height: 46px;
   }
   /* tours-page */
-  .cards-row {
+  .cards__row {
     flex-direction: column;
     -moz-column-gap: 0;
          column-gap: 0;
     row-gap: 30px;
   }
-  .standart-card,
-  .wide-card,
-  .high-card {
+  .card {
     width: 570px;
   }
-  .card-title-wrapper {
+  .card__title-wrapper {
     max-width: 899px;
   }
   /* tracking-page */
@@ -1266,12 +1250,24 @@ a.text-link {
   .main .container {
     width: 100%;
   }
+  .inner-page .container {
+    width: 100%;
+  }
   .main__row {
     margin-bottom: 40px;
     flex-direction: column-reverse;
   }
   .main__row:nth-child(even) {
     flex-direction: column-reverse;
+  }
+  .inner-page__header {
+    margin-bottom: 30px;
+  }
+  .inner-page__header .main-header {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 34px;
   }
   .main__text p {
     margin-bottom: 0;
@@ -1280,34 +1276,22 @@ a.text-link {
     width: auto;
     height: 150px;
   }
-  .title {
-    font-size: 34px;
-  }
-  .inner-page .container {
-    width: 100%;
-  }
-  .inner-page__header {
-    margin-bottom: 30px;
-  }
-  .inner-page__header .main-header {
-    font-size: 28px;
-  }
   /* tours-page */
-  .cards-wrapper {
+  .cards {
     row-gap: 20px;
   }
-  .card-title-wrapper {
+  .cards__row {
+    row-gap: 20px;
+  }
+  .cards__column {
+    row-gap: 20px;
+  }
+  .card__title-wrapper {
     padding-left: 15px;
     padding-right: 15px;
     height: 50px;
   }
-  .cards-row {
-    row-gap: 20px;
-  }
-  .cards-column {
-    row-gap: 20px;
-  }
-  .card-title {
+  .card__title {
     font-size: 20px;
   }
   /* tracking-page */

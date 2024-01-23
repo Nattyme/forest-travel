@@ -47,23 +47,23 @@
         }
     } 
 
-    .main__content {
-        width: auto;
-    }
-
     .title {
         font-size: 42px;
     }
 
-    .main__img {
-        flex-shrink: 0;
-        width: 170px;
-        height: 393px;
+    .main__content {
+        width: auto;
     }
 
     .main__text {
         margin-bottom: 20px;
         font-size: 16px;
+    }
+    
+    .main__img {
+        flex-shrink: 0;
+        width: 170px;
+        height: 393px;
     }
 
     a.button, .button {
@@ -76,19 +76,17 @@
 
 
     /* tours-page */
-    .cards-row {
+    .cards__row {
         flex-direction: column;
         column-gap: 0;
         row-gap: 30px
     }
 
-    .standart-card,
-    .wide-card,
-    .high-card {
+    .card {
         width: 570px;
     }
 
-    .card-title-wrapper {
+    .card__title-wrapper {
         max-width: 899px;
     }
 
