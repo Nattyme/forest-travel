@@ -1,1 +1,12 @@
 
+.header-inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+    background-image: url(./../img/header/header-small-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #265847;
+    color: #fff;
+}

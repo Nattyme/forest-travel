@@ -39,6 +39,10 @@
         padding: 80px 0 82px;
     } 
 
+    .inner-page {
+        padding-bottom: 60px;
+    }
+
     .main__row {
         margin-bottom: 80px;
         column-gap: 30px;
@@ -54,6 +58,10 @@
         }
     }
 
+    .inner-page__header {
+        margin-bottom: 40px;
+    }
+
     .main__img {
         width: 420px;
         height: 362px;
@@ -65,21 +73,13 @@
         }
     }
 
-    .main-header {
+    .title {
         font-size: 50px;
     }
 
     .main__text {
         margin-bottom: 20px;
         font-size: 18px;
-    }
-
-    .inner-page {
-        padding-bottom: 60px;
-    }
-
-    .inner-page-header {
-        margin-bottom: 40px;
     }
 
     /* tours-page */

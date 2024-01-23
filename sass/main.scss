@@ -8,14 +8,16 @@
 @import "./blocks/nav";
 @import "./blocks/nav-icon";
 @import "./blocks/nav-mobile";
-@import "./blocks/inner-page-header";
+@import "./blocks/title";
 @import "./blocks/card";
 @import "./blocks/form";
 @import "./blocks/footer-widget";
 
 // Sections
 @import "./sections/header";
+@import "./sections/header-inner";
 @import "./sections/main";
+@import "./sections/inner-page";
 @import "./sections/cards";
 @import "./sections/article-page";
 @import "./sections/contacts";

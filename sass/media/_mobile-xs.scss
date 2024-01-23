@@ -54,23 +54,19 @@
         height: 150px;
     }
 
-    .main-header {
+    .title {
         font-size: 34px;
     }
-
-    .inner-page-header {
-        margin-bottom: 30px;
-    }
-
+    
     .inner-page {
-
         .container {
             width: 100%;
         }
     }
 
-    .inner-page-header {
-        
+    .inner-page__header {
+        margin-bottom: 30px;
+
         .main-header {
             font-size: 28px;
         }
