@@ -391,7 +391,7 @@ a.button:hover, .button:hover {
 
 .input {
   width: 100%;
-  padding: 0 20px;
+  padding: 12px 20px 15px 20px;
   height: 50px;
   border: 1px solid #c0c0c0;
   background: #eee;
@@ -1236,10 +1236,22 @@ a.text-link {
   .form {
     padding: 30px;
   }
+  .form .button {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+  }
   .form-group:last-of-type {
     margin-bottom: 30px;
   }
-  /* // contacts-page */
+  .input {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+  .form-group-row input:last-child {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   /* Footer */
   .footer {
     padding: 40px 0;
@@ -1380,6 +1392,10 @@ a.text-link {
   }
   .form {
     padding: 20px 31px 30px 15px;
+  }
+  .form .button {
+    padding-left: 35px;
+    padding-right: 35px;
   }
   .form-group-row {
     flex-direction: column;

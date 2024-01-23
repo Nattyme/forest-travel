@@ -145,12 +145,27 @@
 
     .form {
         padding: 30px;
+
+        .button {
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 18px;
+        }
     }
 
     .form-group:last-of-type {
         margin-bottom: 30px;
     }
-    /* // contacts-page */
+
+    .input {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    .form-group-row input:last-child {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
     /* Footer */
     .footer {
