@@ -1,76 +1,13 @@
-/* Contacts page*/
-.contact-info {
-    width: 470px;
-}
-
-.contacts-header {
+.contacts__header {
     margin-bottom: 40px;
 }
 
-.contact-row {
+.contacts__row {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.contact-block {
-
-    & + & {
-        margin-top: 40px;
-    }
-}
-
-.contact-block-title {
-    margin-bottom: 20px;
-
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.contact-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    line-height: 1.6; 
-
-    li {
-        font-size: 20px;
-    }
-
-    a {
-        color: #138ece;
-    }
-}
-
-.contact-list-icon {
-    padding-left: 39px;
-    position: relative;
-
-    &::before {
-        content: "";
-
-        position: absolute;
-        top: 5px;
-        left: 0;
-
-        width: 24px;
-        height: 24px;
-    }
-
-    &.phone::before {
-        background-image: url("./../img/icons/icon-phone.svg"); 
-    }
-
-    &.mail::before {
-        background-image: url("./../img/icons/icon-mail.svg");  
-    }
-
-    &.adress::before {
-        background-image: url("./../img/icons/icon-pin.svg");  
-    }
-}
-
-.contact-map {
+.contacts__info {
     width: 470px;
-    height: 345px;
 }

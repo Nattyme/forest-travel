@@ -194,7 +194,7 @@ a.button:hover, .button:hover {
   background-color: #fff;
   transition: width 0.2s ease-in;
 }
-.nav__link:hover.header-nav-link::after {
+.nav__link:hover.nav__link::after {
   width: 100%;
 }
 
@@ -426,6 +426,56 @@ a.button:hover, .button:hover {
 .article img {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.contact-block + .contact-block {
+  margin-top: 40px;
+}
+
+.contact-block__title {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.contact-block__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  line-height: 1.6;
+}
+.contact-block__list li {
+  font-size: 20px;
+}
+.contact-block__list a {
+  color: #138ece;
+}
+
+.contact-block__icon {
+  padding-left: 39px;
+  position: relative;
+}
+.contact-block__icon::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+.contact-block__icon.phone::before {
+  background-image: url("./../img/icons/icon-phone.svg");
+}
+.contact-block__icon.mail::before {
+  background-image: url("./../img/icons/icon-mail.svg");
+}
+.contact-block__icon.adress::before {
+  background-image: url("./../img/icons/icon-pin.svg");
+}
+
+.contact-block__map {
+  width: 470px;
+  height: 345px;
 }
 
 .form {
@@ -749,7 +799,12 @@ a.text-link {
   text-align: center;
 }
 
-.cards {
+.cards__header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.cards__wrapper {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -770,11 +825,11 @@ a.text-link {
 }
 
 /* Article page*/
-.article-page {
+.article-page__row {
   display: flex;
   justify-content: space-between;
 }
-.article-page > * {
+.article-page__row > * {
   flex-shrink: 0;
   flex-grow: 0;
 }
@@ -783,69 +838,18 @@ a.text-link {
   padding-top: 10px;
 }
 
-/* Contacts page*/
-.contact-info {
-  width: 470px;
-}
-
-.contacts-header {
+.contacts__header {
   margin-bottom: 40px;
 }
 
-.contact-row {
+.contacts__row {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.contact-block + .contact-block {
-  margin-top: 40px;
-}
-
-.contact-block-title {
-  margin-bottom: 20px;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.contact-list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  line-height: 1.6;
-}
-.contact-list li {
-  font-size: 20px;
-}
-.contact-list a {
-  color: #138ece;
-}
-
-.contact-list-icon {
-  padding-left: 39px;
-  position: relative;
-}
-.contact-list-icon::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 0;
-  width: 24px;
-  height: 24px;
-}
-.contact-list-icon.phone::before {
-  background-image: url("./../img/icons/icon-phone.svg");
-}
-.contact-list-icon.mail::before {
-  background-image: url("./../img/icons/icon-mail.svg");
-}
-.contact-list-icon.adress::before {
-  background-image: url("./../img/icons/icon-pin.svg");
-}
-
-.contact-map {
+.contacts__info {
   width: 470px;
-  height: 345px;
 }
 
 .footer {
@@ -952,7 +956,7 @@ a.text-link {
     font-size: 18px;
   }
   /* tours-page */
-  .cards {
+  .cards__wrapper {
     align-items: center;
   }
   .card {
@@ -973,7 +977,7 @@ a.text-link {
     font-size: 24px;
   }
   /* tracking-page*/
-  .article-page {
+  .article-page__row {
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
@@ -996,13 +1000,12 @@ a.text-link {
     padding-right: 2px;
     font-size: 18px;
   }
-  /* // tracking-page*/
   /* contacts-page */
-  .contact-row {
+  .contacts__row {
     flex-direction: column;
     row-gap: 40px;
   }
-  .contact-info {
+  .contacts__info {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -1010,20 +1013,16 @@ a.text-link {
   .contact-block + .contact-block {
     margin-top: 0;
   }
-  .contact-block-title {
+  .contact-block__title {
     font-size: 24px;
   }
-  .contact-list {
+  .contact-block__list {
     padding-top: 5px;
   }
-  .contact-list li {
+  .contact-block__list li {
     font-size: 18px;
   }
-  .contact-list-icon::before {
-    top: 2px;
-    left: 2px;
-  }
-  .contact-map {
+  .contact-block__map {
     width: 420px;
     height: 310px;
   }
@@ -1138,7 +1137,7 @@ a.text-link {
     max-width: 899px;
   }
   /* tracking-page */
-  .article-page {
+  .article-page__row {
     flex-wrap: wrap-reverse;
     row-gap: 40px;
   }
@@ -1156,17 +1155,14 @@ a.text-link {
     width: 100%;
   }
   /* contacts-page */
-  .contacts-header {
+  .contacts__header {
     margin-bottom: 30px;
   }
-  .contact-info {
+  .contacs__info {
     flex-direction: column;
     row-gap: 40px;
   }
-  .contact-block-body iframe {
-    width: 100%;
-  }
-  .contact-map {
+  .contact-block__map {
     width: 570px;
     height: 310px;
   }
@@ -1261,7 +1257,7 @@ a.text-link {
     height: 150px;
   }
   /* tours-page */
-  .cards {
+  .cards__wrapper {
     row-gap: 20px;
   }
   .cards__row {
@@ -1279,8 +1275,8 @@ a.text-link {
     font-size: 20px;
   }
   /* tracking-page */
-  .article-page {
-    row-gap: 0;
+  .article-page__row {
+    row-gap: 20px;
   }
   .article {
     width: 290px;
@@ -1301,35 +1297,36 @@ a.text-link {
   }
   .nav-article__list {
     font-size: 16px;
+    line-height: 1.3;
   }
   .nav-article__list a {
     padding-top: 6px;
     padding-bottom: 9px;
   }
   /* contacts-page */
-  .contacts-header .main-header {
+  .contacts__header .title {
     font-size: 28px;
     line-height: 1;
   }
-  .contact-row {
+  .contacts__row {
     row-gap: 30px;
   }
-  .contact-info {
+  .contacts__info {
     row-gap: 30px;
   }
-  .contact-block-title {
+  .contact-block__title {
     font-size: 20px;
   }
-  .contact-list {
+  .contact-block__list {
     padding-top: 0;
     justify-content: center;
     row-gap: 20px;
     line-height: 1.3;
   }
-  .contact-list li {
+  .contact-block__list li {
     font-size: 16px;
   }
-  .contact-map {
+  .contact-block__map {
     width: 290px;
     height: 157px;
   }

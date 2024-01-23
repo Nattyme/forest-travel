@@ -1,4 +1,9 @@
-.cards {
+.cards__header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.cards__wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 30px;

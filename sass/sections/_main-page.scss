@@ -1,9 +1,4 @@
-.main {
-    padding: 120px 0;
-    flex-grow: 1;
-}
-
-.main__row {
+.main-page__row {
     margin-bottom: 120px;
 
     display: flex;
@@ -19,15 +14,15 @@
     }
 }
 
-.main__content {
+.main-page__content {
     width: 470px;
 }
 
-.main__header {
+.main-page__header {
     margin-bottom: 20px;
 }
 
-.main__text {
+.main-page__text {
     margin-bottom: 40px;
 
     font-size: 20px;
@@ -47,6 +42,6 @@ a.text-link {
     font-weight: 700;
 }
 
-.main__img {
+.main-page__img {
     width: 570px;
 }

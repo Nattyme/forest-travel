@@ -12,6 +12,7 @@
 @import "./blocks/card";
 @import "./blocks/nav-article";
 @import "./blocks/article";
+@import "./blocks/contact-block";
 @import "./blocks/form";
 @import "./blocks/footer-widget";
 
@@ -19,11 +20,11 @@
 @import "./sections/header";
 @import "./sections/header-inner";
 @import "./sections/main";
-@import "./sections/inner-page";
 @import "./sections/cards";
 @import "./sections/article-page";
 @import "./sections/contacts";
 @import "./sections/footer";
+@import "./sections/error";
 
 // Media 
 @import "./media/tablet";
