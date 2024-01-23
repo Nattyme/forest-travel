@@ -5,32 +5,32 @@
         height: 591px;
     }
 
-    .header-top {
+    .header__top {
         padding-left: 15px;
         padding-right: 15px;
         width: 100%;
     }
 
-    .header-content {
+    .header__content {
         padding-top: 7px;
         padding-left: 15px;
         padding-right: 15px;
         width: 900px;
     }
 
+    .nav__list {
+        display: none;
+    }
+
     .nav-icon {
         display: flex;
     }
 
-    .header-nav-list {
-        display: none;
-    }
-
-    .header-title {
+    .header__title {
         font-size: 52px;
     }
 
-    a.header-scroll {
+    a.header__scroll {
         font-size: 0;
     }
 
@@ -39,18 +39,29 @@
         padding: 80px 0 82px;
     } 
 
-    .main-content {
+    .main__row {
+        margin-bottom: 80px;
+        column-gap: 30px;
+    } 
+
+    .main__content {
         width: 420px;
     }
 
-    .main-img {
-        width: 420px;
-        height: 362px;
-    }
-
-    .main-content-header {
+    .main__header {
         .main-header {
             line-height: 1;
+        }
+    }
+
+    .main__img {
+        width: 420px;
+        height: 362px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 
@@ -58,23 +69,9 @@
         font-size: 50px;
     }
 
-    .main-content-text {
+    .main__text {
         margin-bottom: 20px;
         font-size: 18px;
-    }
-
-    .main-row {
-        margin-bottom: 80px;
-        column-gap: 30px;
-    } 
-
-    .main-img {
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
     }
 
     .inner-page {
@@ -197,16 +194,12 @@
         padding-right: 25px;
     }
 
-    /* Footer */
     .footer {
-        padding: 50px 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
-    .footer-widget-services {
-        display: none;
-    } 
-
-    .footer-copyright {
+    .footer__copyright {
         width: 225px;
 
         p {
@@ -214,11 +207,7 @@
         }
     }
 
-    .footer-widget-info {
-        width: 195px;
-    }
-
-    .footer-logo {
+    .footer__logo {
         margin-bottom: 20px;
 
         .logo {
@@ -226,7 +215,19 @@
         }
     }
 
-    .footer-widget-title {
+    .footer-widget {
+
+        &--services {
+            display: none;
+        }
+
+        &--info {
+            width: 195px;
+        }
+        
+    } 
+
+    .footer-widget__title {
         margin-bottom: 20px;
     }
 }

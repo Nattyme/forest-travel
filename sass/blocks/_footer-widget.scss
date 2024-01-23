@@ -1,0 +1,37 @@
+.footer-widget {
+    font-size: 18px;
+
+    &--info {
+        width: 170px;
+    }
+
+    &--services {
+        width: 270px;
+    }
+
+    &--contacts {
+        width: 270px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+.footer-widget__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-widget__list {
+    font-size: 18px;
+
+    li {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
