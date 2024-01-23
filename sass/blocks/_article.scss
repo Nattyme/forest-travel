@@ -1,0 +1,52 @@
+.article {
+    width: 770px;
+    font-size: 20px;
+    line-height: 1.6;
+
+    h1 {
+        margin-bottom: 40px;
+
+        font-size: 54px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    h2, h3, h4, h5, h6 {
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+

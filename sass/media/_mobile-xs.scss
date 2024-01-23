@@ -96,11 +96,11 @@
     }
 
     /* tracking-page */
-    .row-article-page {
+    .article-page {
         row-gap: 0;
     }
 
-    .article-page-article {
+    .article {
         width: 290px;
 
         h1 {
@@ -117,12 +117,12 @@
         }
     }
 
-    .article-page-nav-title {
+    .nav-article__title {
         margin-bottom: 15px;
         font-size: 22px;
     }
 
-    .article-page-nav-list {
+    .nav-article__list {
         font-size: 16px;
 
         a {
@@ -130,8 +130,6 @@
             padding-bottom: 9px;
         }
     }
-
-    /* //tracking-page */
 
     /* contacts-page */
     .contacts-header {

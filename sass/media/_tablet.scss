@@ -110,11 +110,15 @@
     }
    
     /* tracking-page*/
-    .row-article-page {
+    .article-page {
         column-gap: 30px;
     }
 
-    .article-page-article {
+    .article-page__nav {
+        flex-grow: 1;
+    }
+
+    .article {
         width: 570px;
         font-size: 18px;
         flex-grow: 2;
@@ -129,11 +133,7 @@
         }
     }
 
-    .article-page-nav {
-        flex-grow: 1;
-    }
-
-    .article-page-nav-list {
+    .nav-article__list {
         padding-right: 2px;
         font-size: 18px;
     }

@@ -74,7 +74,6 @@
         line-height: 46px;
     }
 
-
     /* tours-page */
     .cards__row {
         flex-direction: column;
@@ -91,16 +90,19 @@
     }
 
     /* tracking-page */
-    .row-article-page {
+    .article-page {
         flex-wrap: wrap-reverse;
         row-gap: 40px;
     }
 
-    .article-page-article {
-        font-size: 16px;
+    .article-page__nav {
+        padding-top: 0;
+        flex-grow: 1;
     }
 
-    .article-page-article {
+    .article {
+        font-size: 16px;
+
         h1 {
             font-size: 42px;
         }
@@ -108,14 +110,7 @@
         img {
             width: 100%;
         }
-        
     }
-
-    .article-page-nav {
-        padding-top: 0;
-        flex-grow: 1;
-    }
-    /* // tracking-page */
 
     /* contacts-page */
     .contacts-header {
