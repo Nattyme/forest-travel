@@ -11,20 +11,29 @@
 .nav__link {
     position: relative;
 
-    &::after {
+    &::before, &::after {
         position: absolute;
         content: "";
-        bottom: -2px;
-        left: 0;
 
         width: 0;
         height: 1px;
         background-color: #fff;
 
-        transition: width 0.2s ease-in;
+        transition: width 0.3s ease-in;
+    }
+    
+    &::before {
+        top: -5px;
+        right: 0;
     }
 
-    &:hover.nav__link::after {
+    &::after {
+        bottom: -5px;
+        left: 0;
+    }
+
+    &:hover.nav__link::after,
+    &:hover.nav__link::before  {
         width: 100%;
     }
 }

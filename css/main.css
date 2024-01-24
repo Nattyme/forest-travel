@@ -1,3 +1,4 @@
+/* cards bg*/
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -165,7 +166,7 @@ a.button, .button {
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 50px;
-  background-color: #0AC883;
+  background-color: #0ac883;
   box-shadow: 0px 8px 20px 0px rgba(24, 219, 148, 0.35);
   font-size: 20px;
   line-height: 50px;
@@ -194,17 +195,23 @@ a.button:hover, .button:hover {
 .nav__link {
   position: relative;
 }
-.nav__link::after {
+.nav__link::before, .nav__link::after {
   position: absolute;
   content: "";
-  bottom: -2px;
-  left: 0;
   width: 0;
   height: 1px;
   background-color: #fff;
-  transition: width 0.2s ease-in;
+  transition: width 0.3s ease-in;
 }
-.nav__link:hover.nav__link::after {
+.nav__link::before {
+  top: -5px;
+  right: 0;
+}
+.nav__link::after {
+  bottom: -5px;
+  left: 0;
+}
+.nav__link:hover.nav__link::after, .nav__link:hover.nav__link::before {
   width: 100%;
 }
 
@@ -264,31 +271,6 @@ a.button:hover, .button:hover {
 
 .nav-mobile {
   display: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.nav-mobile a {
-  margin-right: 60px;
-  color: #2D2D2D;
-  text-decoration: none;
-}
-.nav-mobile a:last-child {
-  margin-right: 0;
-}
-.nav-mobile a:hover {
-  text-decoration: underline;
-}
-
-.nav-mobile.nav-mobile--active {
-  z-index: 99;
-}
-
-.nav-mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   top: -100%;
   left: 0;
@@ -296,6 +278,10 @@ a.button:hover, .button:hover {
   height: 100%;
   background-color: #2d2d2d;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: opacity 0.2s ease-in, top 0s linear 0.2s;
 }
 
@@ -303,12 +289,14 @@ a.button:hover, .button:hover {
   margin-right: 0;
   margin-top: 35px;
   font-size: 28px;
+  font-weight: 500;
   color: #fff;
 }
 
 .nav-mobile.nav-mobile--active {
+  z-index: 99;
   top: 0;
-  opacity: 0.9;
+  opacity: 1;
   transition: top 0s linear, opacity 0.2s ease-in;
 }
 
@@ -739,6 +727,10 @@ a.button:hover, .button:hover {
   height: 24px;
   background-image: url(./../img/header/arrow-down.svg);
   background-repeat: no-repeat;
+  transition: bottom 0.2s ease-in;
+}
+.header__scroll:hover.header__scroll::after {
+  bottom: -5px;
 }
 
 .header-inner {
@@ -928,7 +920,7 @@ a.text-link {
   .main-page__content {
     width: 420px;
   }
-  .main-page__header .main-header {
+  .main-page__header .title {
     line-height: 1;
   }
   .main-page__img {
@@ -1029,6 +1021,9 @@ a.text-link {
   .form-group-row input:last-child {
     padding-left: 25px;
     padding-right: 25px;
+  }
+  .form-group:not(:first-of-type) > .form-group-title {
+    margin-bottom: 13px;
   }
   .footer {
     padding-top: 50px;

@@ -4,8 +4,8 @@ a.button, .button {
     padding-right: 40px;
 
     border-radius: 50px;
-    background-color: #0AC883;
-    box-shadow: 0px 8px 20px 0px rgba(24, 219, 148, 0.35);
+    background-color: $btnBg;
+    box-shadow: $btnShadow;
 
     font-size: 20px;
     line-height: 50px;

@@ -25,26 +25,26 @@
     align-items: center;
     height: 80px;
 
-    background-color: #a6a6a6;
+    background-color: $defaultBg;
     color: #fff;
 
     overflow: hidden;
     white-space: nowrap;
 
     &--extreme {
-        background-color: #c1b19b;
+        background-color: $extremeBg;
     }
 
     &--adventures {
-        background-color: #66b0be;
+        background-color: $adventuresBg;
     }
 
     &--hiking {
-        background-color: #876f56;
+        background-color: $hikingBg;
     }
 
     &--exotic {
-        background-color: #27695e;
+        background-color: $exoticBg;
     }
 }
 

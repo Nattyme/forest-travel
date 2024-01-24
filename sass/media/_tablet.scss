@@ -52,10 +52,8 @@
         width: 420px;
     }
 
-    .main-page__header {
-        .main-header {
-            line-height: 1;
-        }
+    .main-page__header .title {
+        line-height: 1;
     }
 
     .main-page__img {
@@ -146,10 +144,8 @@
         width: 100%;
     }
 
-    .contact-block {
-        & + & {
-            margin-top: 0;
-        }
+    .contact-block + .contact-block {
+        margin-top: 0;
     }
 
     .contact-block__title {
@@ -181,6 +177,10 @@
     .form-group-row input:last-child {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .form-group:not(:first-of-type) > .form-group-title {
+        margin-bottom: 13px;
     }
 
     .footer {

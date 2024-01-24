@@ -12,7 +12,7 @@ body {
     flex-direction: column; /* sticky footer */
     height: 100%; /* sticky footer */
 
-    color: #31405b;
+    color: $textColor;
 }
 
 body > * {

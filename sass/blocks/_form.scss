@@ -2,12 +2,11 @@
     padding: 40px;
     width: 630px;
     background-color: #fff;
-    box-shadow: 0px 10px 20px 0px rgba(211, 211, 211, 0.25);
+    box-shadow: $formShadow;
 }
 
 .form-title {
     margin-bottom: 20px;
-
     font-size: 28px;
     font-weight: 700;
 }
