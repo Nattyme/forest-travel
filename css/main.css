@@ -331,8 +331,6 @@ legend {
   height: 80px;
   background-color: #a6a6a6;
   color: #fff;
-  overflow: hidden;
-  white-space: nowrap;
 }
 .card__title-wrapper--extreme {
   background-color: #c1b19b;
@@ -348,10 +346,12 @@ legend {
 }
 
 .card__title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
   font-size: 28px;
   font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 
 .nav-article {
@@ -970,6 +970,9 @@ a.text-link {
     font-size: 18px;
   }
   /* tours-page */
+  .cards__header {
+    margin-bottom: 40px;
+  }
   .cards__wrapper {
     align-items: center;
   }
@@ -1167,7 +1170,9 @@ a.text-link {
   }
   .article-page__nav {
     padding-top: 0;
-    flex-grow: 1;
+  }
+  .nav-article {
+    width: 100%;
   }
   .article {
     font-size: 16px;
@@ -1176,6 +1181,8 @@ a.text-link {
     font-size: 42px;
   }
   .article img {
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
   }
   /* contacts-page */
@@ -1230,6 +1237,9 @@ a.text-link {
 }
 /* Mobile XS*/
 @media (max-width: 599px) {
+  .title {
+    font-size: 28px;
+  }
   .logo {
     font-size: 30px;
   }
@@ -1246,10 +1256,9 @@ a.text-link {
   .header__scroll::after {
     transform: translateX(-63%);
   }
-  .main {
-    padding: 40px 0;
-  }
   .main .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
     width: 100%;
   }
   .inner-page .container {
@@ -1262,9 +1271,6 @@ a.text-link {
   .main-page__row:nth-child(even) {
     flex-direction: column-reverse;
   }
-  .title {
-    font-size: 34px;
-  }
   .main-page__text p {
     margin-bottom: 0;
   }
@@ -1273,6 +1279,12 @@ a.text-link {
     height: 150px;
   }
   /* tours-page */
+  .cards__header {
+    margin-bottom: 30px;
+  }
+  .card {
+    max-width: 290px;
+  }
   .cards__wrapper {
     row-gap: 20px;
   }
@@ -1307,6 +1319,13 @@ a.text-link {
   .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
     line-height: normal;
   }
+  .article p {
+    margin-bottom: 18px;
+  }
+  .article-page__nav {
+    flex-grow: 0;
+    width: 100%;
+  }
   .nav-article__title {
     margin-bottom: 15px;
     font-size: 22px;
@@ -1318,6 +1337,7 @@ a.text-link {
   .nav-article__list a {
     padding-top: 6px;
     padding-bottom: 9px;
+    padding-right: 5px;
   }
   /* contacts-page */
   .contacts__header .title {
