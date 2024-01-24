@@ -1,47 +1,8 @@
 .main-page__row {
     margin-bottom: 120px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    &:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-
+    
     &:last-child {
         margin-bottom: 0;
     }
 }
 
-.main-page__content {
-    width: 470px;
-}
-
-.main-page__header {
-    margin-bottom: 20px;
-}
-
-.main-page__text {
-    margin-bottom: 40px;
-
-    font-size: 20px;
-    line-height: 1.6;
-    
-    p {
-        margin-bottom: 15px;
-    }
-}
-
-a.text-link {
-    text-decoration: underline;
-    color: #138ece;
-}
-
-.text-bold {
-    font-weight: 700;
-}
-
-.main-page__img {
-    width: 570px;
-}

@@ -98,10 +98,6 @@
             font-size: 28px;
         }
 
-        img {
-            margin: 22px 0;
-        }
-
         h1, h2, h3, h4, h5, h6 {
             line-height: normal;
         }
@@ -109,6 +105,11 @@
         p {
             margin-bottom: 18px;
         }
+    }
+
+    .article__img {
+        margin-top: 22px;
+        margin-bottom: 22px;
     }
 
     .article-page__nav {

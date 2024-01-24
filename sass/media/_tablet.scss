@@ -45,8 +45,11 @@
 
     .main-page__row {
         margin-bottom: 80px;
-        column-gap: 30px;
     } 
+
+    .article-main {
+        column-gap: 30px;
+    }
 
     .main-page__content {
         width: 420px;
@@ -125,10 +128,11 @@
             margin-bottom: 20px;
             font-size: 50px;
         }
+    }
 
-        img {
-            margin: 31px 0;
-        }
+    .article__img {
+        margin-top: 31px;
+        margin-bottom: 31px;
     }
 
     .nav-article__list {

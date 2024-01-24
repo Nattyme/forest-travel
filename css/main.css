@@ -308,6 +308,43 @@ legend {
   color: #31405B;
 }
 
+.article-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.article-main:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.article-main__content {
+  width: 470px;
+}
+
+.article-main__header {
+  margin-bottom: 20px;
+}
+
+.article-main__text {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+.article-main__text p {
+  margin-bottom: 15px;
+}
+.article-main__text p span {
+  font-weight: 700;
+}
+.article-main__text p a {
+  text-decoration: underline;
+  color: #138ece;
+}
+
+.article-main__img {
+  width: 570px;
+}
+
 .card {
   width: 570px;
   text-decoration: none;
@@ -429,10 +466,18 @@ legend {
 .article p {
   margin-bottom: 15px;
 }
+.article p span {
+  font-weight: 700;
+}
+.article p a {
+  color: #138ece;
+  text-decoration: underline;
+}
 .article > *:last-child {
   margin-bottom: 0;
 }
-.article img {
+
+.article__img {
   margin-top: 40px;
   margin-bottom: 40px;
 }
@@ -767,45 +812,9 @@ legend {
 
 .main-page__row {
   margin-bottom: 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.main-page__row:nth-child(even) {
-  flex-direction: row-reverse;
 }
 .main-page__row:last-child {
   margin-bottom: 0;
-}
-
-.main-page__content {
-  width: 470px;
-}
-
-.main-page__header {
-  margin-bottom: 20px;
-}
-
-.main-page__text {
-  margin-bottom: 40px;
-  font-size: 20px;
-  line-height: 1.6;
-}
-.main-page__text p {
-  margin-bottom: 15px;
-}
-
-a.text-link {
-  text-decoration: underline;
-  color: #138ece;
-}
-
-.text-bold {
-  font-weight: 700;
-}
-
-.main-page__img {
-  width: 570px;
 }
 
 .cards__header {
@@ -943,6 +952,8 @@ a.text-link {
   }
   .main-page__row {
     margin-bottom: 80px;
+  }
+  .article-main {
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
@@ -1010,8 +1021,9 @@ a.text-link {
     margin-bottom: 20px;
     font-size: 50px;
   }
-  .article img {
-    margin: 31px 0;
+  .article__img {
+    margin-top: 31px;
+    margin-bottom: 31px;
   }
   .nav-article__list {
     padding-right: 2px;
@@ -1180,7 +1192,7 @@ a.text-link {
   .article h1 {
     font-size: 42px;
   }
-  .article img {
+  .article__img {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -1313,14 +1325,15 @@ a.text-link {
     margin-bottom: 10px;
     font-size: 28px;
   }
-  .article img {
-    margin: 22px 0;
-  }
   .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
     line-height: normal;
   }
   .article p {
     margin-bottom: 18px;
+  }
+  .article__img {
+    margin-top: 22px;
+    margin-bottom: 22px;
   }
   .article-page__nav {
     flex-grow: 0;
