@@ -169,22 +169,14 @@
         width: 100%;
     }
 
-    .input {
-        padding-left: 29px;
-        padding-right: 29px;
-    }
-
-    .form-group-row input:last-child {
+    .form__input-row input:last-child {
         padding-left: 25px;
         padding-right: 25px;
     }
 
-    .radio-row {
-        align-items: center;
-    }
-
-    .checkbox-row {
-        align-items: center;
+    .input {
+        padding-left: 29px;
+        padding-right: 29px;
     }
 
     .footer {

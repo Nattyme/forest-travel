@@ -21,19 +21,30 @@
     a {
         padding-top: 14px;
         padding-bottom: 14px;
-    
         display: block;
+        position: relative;
     
-        text-decoration: none;
         color: #138ece;
+
+        &::before {
+            @extend %linkPsevdo;
+            top: 0;
+            left: -10px;
+            background-color: #138ece;
+        }
+
+        &:hover::before {
+            width: 2px;
+            height: 100%;
+        }
 
         &.active {
             font-weight: 700;
             color: #e04e4e;
-        }
 
-        &:hover {
-            text-decoration: underline;
+            &:hover::before {
+                background-color: #e04e4e;
+            }
         }
     }
 }

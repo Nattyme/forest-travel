@@ -4,3 +4,12 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+%linkPsevdo {
+    position: absolute;
+    content: "";
+
+    height: 1px;
+
+    transition: all 0.2s ease-in;
+}

@@ -1,4 +1,11 @@
 /* cards bg*/
+.footer a::before, .nav-article__list a::before, .nav__link::before, .nav__link::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  transition: all 0.2s ease-in;
+}
+
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -16,7 +23,6 @@
 a, a:link, a:visited {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
 }
 
 a:hover {
@@ -53,7 +59,6 @@ address {
 /* Form */
 input, textarea, button, select {
   font-family: inherit;
-  font-size: inherit;
   color: inherit;
   background-color: transparent;
 }
@@ -161,7 +166,7 @@ legend {
   background-color: #f2f8f6;
 }
 
-a.button, .button {
+.button {
   height: 50px;
   padding-left: 40px;
   padding-right: 40px;
@@ -174,7 +179,7 @@ a.button, .button {
   color: #fff;
   transition: box-shadow 0.2s ease-in;
 }
-a.button:hover, .button:hover {
+.button:hover {
   box-shadow: 0px 0px 30px 0px rgba(24, 219, 148, 0.813);
 }
 
@@ -194,14 +199,11 @@ a.button:hover, .button:hover {
 
 .nav__link {
   position: relative;
+  color: #fff;
 }
 .nav__link::before, .nav__link::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 1px;
   background-color: #fff;
-  transition: width 0.3s ease-in;
+  width: 0;
 }
 .nav__link::before {
   top: -5px;
@@ -374,15 +376,24 @@ a.button:hover, .button:hover {
   padding-top: 14px;
   padding-bottom: 14px;
   display: block;
-  text-decoration: none;
+  position: relative;
   color: #138ece;
+}
+.nav-article__list a::before {
+  top: 0;
+  left: -10px;
+  background-color: #138ece;
+}
+.nav-article__list a:hover::before {
+  width: 2px;
+  height: 100%;
 }
 .nav-article__list a.active {
   font-weight: 700;
   color: #e04e4e;
 }
-.nav-article__list a:hover {
-  text-decoration: underline;
+.nav-article__list a.active:hover::before {
+  background-color: #e04e4e;
 }
 
 .article {
@@ -531,9 +542,11 @@ a.button:hover, .button:hover {
   color: #31405b;
 }
 .input::-moz-placeholder {
+  font-size: 18px;
   color: rgba(49, 64, 91, 0.5);
 }
 .input::placeholder {
+  font-size: 18px;
   color: rgba(49, 64, 91, 0.5);
 }
 .input:focus {
@@ -543,7 +556,7 @@ a.button:hover, .button:hover {
 
 .radio {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .radio__real {
@@ -593,7 +606,7 @@ a.button:hover, .button:hover {
 
 .checkbox {
   display: flex;
-  align-items: flex-start;
+  align-items: top;
 }
 
 .checkbox__real {
@@ -855,8 +868,16 @@ a.text-link {
   background-color: #265847;
   color: #fff;
 }
-.footer a:hover {
-  text-decoration: underline;
+.footer a {
+  position: relative;
+  color: #fff;
+}
+.footer a::before {
+  background-color: #fff;
+  bottom: -5px;
+}
+.footer a:hover::before {
+  width: 100%;
 }
 
 .footer__row {
@@ -1022,19 +1043,13 @@ a.text-link {
   .form {
     width: 100%;
   }
-  .input {
-    padding-left: 29px;
-    padding-right: 29px;
-  }
-  .form-group-row input:last-child {
+  .form__input-row input:last-child {
     padding-left: 25px;
     padding-right: 25px;
   }
-  .radio-row {
-    align-items: center;
-  }
-  .checkbox-row {
-    align-items: center;
+  .input {
+    padding-left: 29px;
+    padding-right: 29px;
   }
   .footer {
     padding-top: 50px;
@@ -1190,7 +1205,7 @@ a.text-link {
     padding-left: 19px;
     padding-right: 19px;
   }
-  .form-group-row input:last-child {
+  .form__input-row input:last-child {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -1327,12 +1342,18 @@ a.text-link {
   .contact-block__list li {
     font-size: 16px;
   }
+  .contact-block__icon {
+    padding-left: 33px;
+  }
+  .contact-block__icon::before {
+    top: 0;
+  }
   .contact-block__map {
     width: 290px;
     height: 157px;
   }
   .form {
-    padding: 20px 31px 30px 15px;
+    padding: 20px 15px 30px 15px;
   }
   .form .button {
     padding-left: 35px;
@@ -1341,15 +1362,32 @@ a.text-link {
   .form__title {
     font-size: 24px;
   }
-  .form-group {
-    margin-bottom: 20px;
+  .form__group {
+    margin-bottom: 22px;
     font-size: 16px;
   }
-  .form-group-row {
+  .form__group:last-of-type {
+    margin-bottom: 20px;
+  }
+  .form__checkbox {
+    padding-right: 5px;
+  }
+  .form__legend {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .form__input-row {
     flex-direction: column;
   }
-  .form-group-title {
-    font-size: 18px;
+  .form__radio + .form__radio {
+    margin-top: 10px;
+  }
+  .form__checkbox + .form__checkbox {
+    margin-top: 22px;
+  }
+  .input {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   /* footer */
   .footer {
@@ -1383,14 +1421,14 @@ a.text-link {
     display: block;
   }
   .footer-widget__title {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     font-size: 20px;
   }
   .footer-widget__list {
     font-size: 16px;
   }
   .footer-widget__list li {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
   a.button, .button {
     padding: 0 35px;
