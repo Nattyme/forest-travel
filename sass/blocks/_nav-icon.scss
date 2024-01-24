@@ -46,6 +46,10 @@
     z-index: 999;
 }
 
+.header-inner .nav-icon.nav-icon--active {
+    top: 30px;
+}
+
 .nav-icon.nav-icon--active .nav-icon__middle {
     background-color: transparent;
 

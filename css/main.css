@@ -1,5 +1,5 @@
 /* cards bg*/
-.footer a::before, .nav-article__list a::before, .nav__link::before, .nav__link::after {
+.footer a::before, .nav-article__list a::before, .nav-mobile a:after, .nav__link::before, .nav__link::after {
   position: absolute;
   content: "";
   height: 1px;
@@ -93,6 +93,30 @@ legend {
   display: block;
 }
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* Tablet */
+  /* Mobile */
+  /* Mobile XS*/
+}
+@media (max-width: 1199px) {
+  .container {
+    width: 900px;
+  }
+}
+@media (max-width: 899px) {
+  .container {
+    width: 600px;
+  }
+}
+@media (max-width: 599px) {
+  .container {
+    width: 320px;
+  }
+}
+
 html {
   height: 100%; /* sticky footer */
   scroll-behavior: smooth;
@@ -130,30 +154,6 @@ legend {
   margin: 0;
   padding: 0;
   border: none;
-}
-
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-  /* Tablet */
-  /* Mobile */
-  /* Mobile XS*/
-}
-@media (max-width: 1199px) {
-  .container {
-    width: 900px;
-  }
-}
-@media (max-width: 899px) {
-  .container {
-    width: 600px;
-  }
-}
-@media (max-width: 599px) {
-  .container {
-    width: 320px;
-  }
 }
 
 .main {
@@ -257,6 +257,10 @@ legend {
   z-index: 999;
 }
 
+.header-inner .nav-icon.nav-icon--active {
+  top: 30px;
+}
+
 .nav-icon.nav-icon--active .nav-icon__middle {
   background-color: transparent;
 }
@@ -290,9 +294,18 @@ legend {
 .nav-mobile a {
   margin-right: 0;
   margin-top: 35px;
+  position: relative;
   font-size: 28px;
   font-weight: 500;
   color: #fff;
+}
+.nav-mobile a:after {
+  background-color: #fff;
+  bottom: -5px;
+  left: 0;
+}
+.nav-mobile a:hover:after {
+  width: 100%;
 }
 
 .nav-mobile.nav-mobile--active {
@@ -781,6 +794,7 @@ legend {
   transform: translateX(-50%);
   font-size: 16px;
   text-align: center;
+  color: #fff;
 }
 .header__scroll::after {
   position: absolute;
@@ -914,8 +928,15 @@ legend {
   gap: 30px;
 }
 
+.error__header {
+  text-align: center;
+}
+
 /* Tablet */
 @media (max-width: 1199px) {
+  .title {
+    font-size: 50px;
+  }
   /* header */
   .header {
     height: 591px;
@@ -940,7 +961,7 @@ legend {
   .header__title {
     font-size: 52px;
   }
-  a.header__scroll {
+  .header__scroll {
     font-size: 0;
   }
   /* main */
@@ -957,26 +978,23 @@ legend {
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
-  .main-page__content {
+  .article-main__content {
     width: 420px;
   }
-  .main-page__header .title {
+  .article-main__header .title {
     line-height: 1;
   }
-  .main-page__img {
+  .article-main__img {
     width: 420px;
     height: 362px;
   }
-  .main-page__img img {
+  .article-main__img img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .title {
-    font-size: 50px;
-  }
-  .main-page__text {
+  .article-main__text {
     margin-bottom: 20px;
     font-size: 18px;
   }
@@ -1094,6 +1112,17 @@ legend {
 }
 /* Mobile */
 @media (max-width: 899px) {
+  .title {
+    font-size: 42px;
+  }
+  .button {
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 46px;
+    font-size: 18px;
+    line-height: 46px;
+  }
+  /* header */
   .header {
     background-image: url("./../img/header/header-bg-mobile.jpg");
     background-position: center;
@@ -1134,33 +1163,25 @@ legend {
   }
   .main-page__row {
     margin-bottom: 60px;
+  }
+  .article-main {
     row-gap: 20px;
     flex-direction: row-reverse;
   }
-  .main-page__row:nth-child(even) {
+  .article-main:nth-child(even) {
     flex-direction: row-reverse;
   }
-  .title {
-    font-size: 42px;
-  }
-  .main-page__content {
+  .article-main__content {
     width: auto;
   }
-  .main-page__text {
+  .article-main__text {
     margin-bottom: 20px;
     font-size: 16px;
   }
-  .main-page__img {
+  .article-main__img {
     flex-shrink: 0;
     width: 170px;
     height: 393px;
-  }
-  a.button, .button {
-    padding-left: 35px;
-    padding-right: 35px;
-    height: 46px;
-    font-size: 18px;
-    line-height: 46px;
   }
   /* tours-page */
   .cards__row {
@@ -1252,6 +1273,7 @@ legend {
   .title {
     font-size: 28px;
   }
+  /* header */
   .logo {
     font-size: 30px;
   }
@@ -1278,15 +1300,17 @@ legend {
   }
   .main-page__row {
     margin-bottom: 40px;
+  }
+  .article-main {
     flex-direction: column-reverse;
   }
-  .main-page__row:nth-child(even) {
+  .article-main:nth-child(even) {
     flex-direction: column-reverse;
   }
-  .main-page__text p {
+  .article-main__text p {
     margin-bottom: 0;
   }
-  .main-page__img {
+  .article-main__img {
     width: auto;
     height: 150px;
   }

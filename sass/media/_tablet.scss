@@ -1,5 +1,9 @@
 /* Tablet */
 @media (max-width: 1199px) {
+    .title {
+        font-size: 50px;
+    }
+    
     /* header */
     .header {
         height: 591px;
@@ -30,7 +34,7 @@
         font-size: 52px;
     }
 
-    a.header__scroll {
+    .header__scroll {
         font-size: 0;
     }
 
@@ -51,15 +55,15 @@
         column-gap: 30px;
     }
 
-    .main-page__content {
+    .article-main__content {
         width: 420px;
     }
 
-    .main-page__header .title {
+    .article-main__header .title {
         line-height: 1;
     }
 
-    .main-page__img {
+    .article-main__img {
         width: 420px;
         height: 362px;
 
@@ -70,11 +74,7 @@
         }
     }
 
-    .title {
-        font-size: 50px;
-    }
-
-    .main-page__text {
+    .article-main__text {
         margin-bottom: 20px;
         font-size: 18px;
     }
