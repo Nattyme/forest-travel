@@ -117,15 +117,15 @@
 
                     <!-- contact-form -->
                     <form class="form">
-                        <h3 class="form-title">Заявка на подбор тура</h3>
+                        <h3 class="form__title">Заявка на подбор тура</h3>
                         <!-- form-group -->
-                        <fieldset class="form-group">
-                            <legend class="form-group-title">Личные данные</legend>
+                        <fieldset class="form__group">
+                            <legend class="form__legend">Личные данные</legend>
 
-                            <div class="form-input-wrapper">
-                            <input class="input" type="text" placeholder="Введите имя">
+                            <div class="form__input-wrapper">
+                                <input class="input" type="text" placeholder="Введите имя">
                             </div>
-                            <div class="form-group-row">
+                            <div class="form__input-row">
                                 <input class="input" type="tel" placeholder="Телефон" required>
                                 <input class="input" type="email" placeholder="Email" required>
                             </div>
@@ -134,59 +134,76 @@
                         <!--// form-group -->
 
                         <!-- form-group -->
-                        <fieldset class="form-group">
-                            <legend class="form-group-title">Количество человек для тура</legend>
+                        <fieldset class="form__group">
+                            <legend class="form__legend">Количество человек для тура</legend>
 
-                            <label class="radio-row">
-                                <input name="number-of-people" class="real-radio" type="radio">
-                                <span class="custom-radio"></span>
-                                <span>2 - 4 человека</span>
-                            </label>
+                            <div class="form__radio">
+                                <label class="radio">
+                                    <input name="number-of-people" class="radio__real" type="radio">
+                                    <span class="radio__custom"></span>
+                                    <span>2 - 4 человека</span>
+                                </label>
+                            </div>
 
-                            <label class="radio-row">
-                                <input name="number-of-people" class="real-radio" type="radio">
-                                <span class="custom-radio"></span>
-                                <span>5 - 10 человек</span>
-                            </label>
+                            <div class="form__radio">
+                                <label class="radio">
+                                    <input name="number-of-people" class="radio__real" type="radio">
+                                    <span class="radio__custom"></span>
+                                    <span>5 - 10 человек</span>
+                                </label>
+                            </div>
 
-                            <label class="radio-row">
-                                <input name="number-of-people" class="real-radio" type="radio">
-                                <span class="custom-radio"></span>
-                                <span>11 человек и более</span>
-                            </label>
+                            <div class="form__radio">
+                                <label class="radio">
+                                    <input name="number-of-people" class="radio__real" type="radio">
+                                    <span class="radio__custom"></span>
+                                    <span>11 человек и более</span>
+                                </label>
+                            </div>
                             
                         </fieldset>
                         <!--// form-group -->
 
                         <!-- form-group -->
-                        <fieldset class="form-group">
-                            <legend class="form-group-title">Какие направления вам интересны</legend>
-                            <label class="checkbox-row">
-                                <input name="directions-are-interested" class="real-checkbox" type="checkbox">
-                                <span class="custom-checkbox"></span>
-                                <span>Трекинг туры, походы по горам и пересеченной местности.</span>
-                            </label>
+                        <fieldset class="form__group">
+                            <legend class="form__legend">Какие направления вам интересны</legend>
 
-                            <label class="checkbox-row">
-                                <input name="directions-are-interested" class="real-checkbox" type="checkbox">
-                                <span class="custom-checkbox"></span>
-                                <span>Восхождения на вершины.</span>
-                            </label>
+                            <div class="form__checkbox">
 
-                            <label class="checkbox-row">
-                                <input name="directions-are-interested" class="real-checkbox" type="checkbox">
-                                <span class="custom-checkbox"></span>
-                                <span>Экзотические джунгли, вулканы.</span>
-                            </label>
+                                <label class="checkbox">
+                                    <input name="directions-are-interested" class="checkbox__real" type="checkbox">
+                                    <span class="checkbox__custom"></span>
+                                    <span>Трекинг туры, походы по горам и пересеченной местности.</span>
+                                </label>
 
-                            <label class="checkbox-row">
-                                <input name="directions-are-interested" class="real-checkbox" type="checkbox">
-                                <span class="custom-checkbox"></span>
-                                <span>Комбинированные: море, горы, города, лес.</span>
-                            </label>
+                            </div>
+
+                            <div class="form__checkbox">
+                                <label class="checkbox">
+                                    <input name="directions-are-interested" class="checkbox__real" type="checkbox">
+                                    <span class="checkbox__custom"></span>
+                                    <span>Восхождения на вершины.</span>
+                                </label>
+                            </div>
+
+                            <div class="form__checkbox">
+                                <label class="checkbox">
+                                    <input name="directions-are-interested" class="checkbox__real" type="checkbox">
+                                    <span class="checkbox__custom"></span>
+                                    <span>Экзотические джунгли, вулканы.</span>
+                                </label>
+                            </div>
+
+                            <div class="form__checkbox">
+                                <label class="checkbox">
+                                    <input name="directions-are-interested" class="checkbox__real" type="checkbox">
+                                    <span class="checkbox__custom"></span>
+                                    <span>Комбинированные: море, горы, города, лес.</span>
+                                </label>
+                            </div>
                         </fieldset>
                         <!--// form-group -->
-                    <input class="button" type="submit" value="Отправить заявку">
+                        <input class="button" type="submit" value="Отправить заявку">
                     </form>
                     <!--// contact-form -->
                 </div>

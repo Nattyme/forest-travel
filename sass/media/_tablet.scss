@@ -179,8 +179,12 @@
         padding-right: 25px;
     }
 
-    .form-group:not(:first-of-type) > .form-group-title {
-        margin-bottom: 13px;
+    .radio-row {
+        align-items: center;
+    }
+
+    .checkbox-row {
+        align-items: center;
     }
 
     .footer {
