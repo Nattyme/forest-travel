@@ -1,8 +1,10 @@
-.main-page__row {
-    margin-bottom: 120px;
-    
-    &:last-child {
-        margin-bottom: 0;
-    }
+.main-page__content {
+   display: flex;
+   flex-direction: column;
+   row-gap: 120px;
+}
+
+.main-page__header {
+    font-size: 0;
 }
 

@@ -329,6 +329,9 @@ legend {
 .article-main:nth-child(even) {
   flex-direction: row-reverse;
 }
+.article-main:last-child {
+  margin-bottom: 0;
+}
 
 .article-main__content {
   width: 470px;
@@ -824,11 +827,14 @@ legend {
   color: #fff;
 }
 
-.main-page__row {
-  margin-bottom: 120px;
+.main-page__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
 }
-.main-page__row:last-child {
-  margin-bottom: 0;
+
+.main-page__header {
+  font-size: 0;
 }
 
 .cards__header {
@@ -971,8 +977,8 @@ legend {
   .inner-page {
     padding-bottom: 60px;
   }
-  .main-page__row {
-    margin-bottom: 80px;
+  .main-page__content {
+    row-gap: 80px;
   }
   .article-main {
     -moz-column-gap: 30px;
