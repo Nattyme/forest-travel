@@ -1,5 +1,4 @@
-/* cards bg*/
-.footer a::before, .nav-article__list a::before, .nav-mobile a:after, .nav__link::before, .nav__link::after {
+.footer-widget__list a::before, .nav-article__list a::before, .nav-mobile a:after, .nav__link::before, .nav__link::after {
   position: absolute;
   content: "";
   height: 1px;
@@ -69,20 +68,12 @@ input::-ms-clear {
 
 button, input[type=submit] {
   display: inline-block;
-  /* box-shadow: none; */
-  /* background-color: transparent; */
-  /* background: none; */
   cursor: pointer;
 }
 
 input:focus, input:active,
 button:focus, button:active {
   outline: none;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
 }
 
 label {
@@ -554,6 +545,10 @@ legend {
   width: 470px;
   height: 345px;
 }
+.contact-block__map iframe {
+  width: 100%;
+  height: 100%;
+}
 
 .form {
   padding: 40px;
@@ -853,7 +848,6 @@ legend {
 
 .cards__row {
   display: flex;
-  /* justify-content: space-between; */
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
@@ -861,11 +855,9 @@ legend {
 .cards__column {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   row-gap: 30px;
 }
 
-/* Article page*/
 .article-page__row {
   display: flex;
   justify-content: space-between;
@@ -900,17 +892,6 @@ legend {
   background-color: #265847;
   color: #fff;
 }
-.footer a {
-  position: relative;
-  color: #fff;
-}
-.footer a::before {
-  background-color: #fff;
-  bottom: -5px;
-}
-.footer a:hover::before {
-  width: 100%;
-}
 
 .footer__row {
   display: flex;
@@ -935,6 +916,18 @@ legend {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+
+.footer-widget__list a {
+  position: relative;
+  color: #fff;
+}
+.footer-widget__list a::before {
+  background-color: #fff;
+  bottom: -5px;
+}
+.footer-widget__list a:hover::before {
+  width: 100%;
 }
 
 .error__header {
@@ -1131,7 +1124,6 @@ legend {
     font-size: 18px;
     line-height: 46px;
   }
-  /* header */
   .header {
     background-image: url("./../img/header/header-bg-mobile.jpg");
     background-position: center;
@@ -1160,7 +1152,6 @@ legend {
   .header-inner .logo {
     font-size: 30px;
   }
-  /* main-page */
   .main {
     padding: 60px 0;
   }
@@ -1192,7 +1183,6 @@ legend {
     width: 170px;
     height: 393px;
   }
-  /* tours-page */
   .cards__row {
     flex-direction: column;
     -moz-column-gap: 0;
@@ -1205,7 +1195,6 @@ legend {
   .card__title-wrapper {
     max-width: 899px;
   }
-  /* tracking-page */
   .article-page__row {
     flex-wrap: wrap-reverse;
     row-gap: 40px;
@@ -1227,7 +1216,6 @@ legend {
     margin-bottom: 20px;
     width: 100%;
   }
-  /* contacts-page */
   .contacts__header {
     margin-bottom: 30px;
   }
@@ -1258,7 +1246,6 @@ legend {
     padding-left: 16px;
     padding-right: 16px;
   }
-  /* Footer */
   .footer {
     padding: 40px 0;
   }
@@ -1282,7 +1269,6 @@ legend {
   .title {
     font-size: 28px;
   }
-  /* header */
   .logo {
     font-size: 30px;
   }
@@ -1460,7 +1446,6 @@ legend {
     padding-left: 15px;
     padding-right: 15px;
   }
-  /* footer */
   .footer {
     text-align: center;
   }

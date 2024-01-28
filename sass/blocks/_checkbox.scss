@@ -53,5 +53,5 @@
 
 .checkbox__real:focus + .checkbox__custom {
     border: 1px solid #2ab698;
-    box-shadow: 0 0 10px rgba(42, 182, 152, 0.5);
+    box-shadow: $formFocusShadow;
 }

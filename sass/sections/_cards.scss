@@ -11,13 +11,11 @@
 
 .cards__row {
     display: flex;
-    /* justify-content: space-between; */
     column-gap: 30px;
 }
 
 .cards__column {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     row-gap: 30px;
 }
