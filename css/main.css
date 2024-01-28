@@ -1205,15 +1205,28 @@ legend {
   .nav-article {
     width: 100%;
   }
+  .nav-article__title {
+    margin-bottom: 20px;
+  }
+  .nav-article__list a {
+    padding-top: 15px;
+  }
   .article {
     font-size: 16px;
   }
   .article h1 {
     font-size: 42px;
   }
+  .article p {
+    margin-bottom: 16px;
+  }
+  .article h2, .article h3, .article h4, .article h5 {
+    padding-top: 5px;
+    margin-bottom: 10px;
+  }
   .article__img {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     width: 100%;
   }
   .contacts__header {
@@ -1350,6 +1363,8 @@ legend {
     font-size: 28px;
   }
   .article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
+    padding-top: 0;
+    margin-bottom: 15px;
     line-height: normal;
   }
   .article p {
@@ -1453,7 +1468,7 @@ legend {
     width: 320px;
   }
   .footer__row {
-    row-gap: 40px;
+    row-gap: 43px;
   }
   .footer__copyright {
     text-align: center;
@@ -1477,7 +1492,7 @@ legend {
     display: block;
   }
   .footer-widget__title {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     font-size: 20px;
   }
   .footer-widget__list {

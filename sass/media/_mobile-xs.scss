@@ -108,6 +108,8 @@
         }
 
         h1, h2, h3, h4, h5, h6 {
+            padding-top: 0;
+            margin-bottom: 15px;
             line-height: normal;
         }
 
@@ -244,7 +246,7 @@
     }
 
     .footer__row {
-        row-gap: 40px;
+        row-gap: 43px;
     }
 
     .footer__copyright {
@@ -278,7 +280,7 @@
     }
 
     .footer-widget__title {
-        margin-bottom: 11px;
+        margin-bottom: 10px;
         font-size: 20px;
     }
 

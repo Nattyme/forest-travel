@@ -107,17 +107,34 @@
         width: 100%;
     }
 
+    .nav-article__title {
+        margin-bottom: 20px;
+    }
+
+    .nav-article__list a {
+        padding-top: 15px;
+    }
+
     .article {
         font-size: 16px;
 
         h1 {
             font-size: 42px;
         }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        h2, h3, h4, h5 {
+            padding-top: 5px;
+            margin-bottom: 10px;
+        }
     }
 
     .article__img {
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
         width: 100%;
     }
 
