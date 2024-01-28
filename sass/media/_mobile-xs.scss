@@ -27,19 +27,21 @@
         transform: translateX(-63%);
     }
 
-    .main .container {
+    .main {
         padding-top: 40px;
-        padding-bottom: 40px;
-        width: 100%;
+        padding-bottom: 40px; 
     } 
+
+    .main .container {
+        width: 100%;
+    }
 
     .inner-page .container {
          width: 100%;
-
     }
     
-    .main-page__row {
-        margin-bottom: 40px;  
+    .main-page__content {
+        row-gap: 40px;
     } 
 
     .article-main {
@@ -48,6 +50,10 @@
         &:nth-child(even) {
             flex-direction: column-reverse;
         }
+    }
+
+    .article-main__header .title {
+        font-size: 34px;
     }
 
     .article-main__text p {

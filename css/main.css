@@ -166,6 +166,20 @@ legend {
   background-color: #f2f8f6;
 }
 
+.inner-page-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.text-link {
+  text-decoration: underline;
+  color: #138ece;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
 .button {
   height: 50px;
   padding-left: 40px;
@@ -348,13 +362,6 @@ legend {
 }
 .article-main__text p {
   margin-bottom: 15px;
-}
-.article-main__text p span {
-  font-weight: 700;
-}
-.article-main__text p a {
-  text-decoration: underline;
-  color: #138ece;
 }
 
 .article-main__img {
@@ -667,7 +674,7 @@ legend {
 
 .checkbox {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
 }
 
 .checkbox__real {
@@ -831,10 +838,6 @@ legend {
   display: flex;
   flex-direction: column;
   row-gap: 120px;
-}
-
-.main-page__header {
-  font-size: 0;
 }
 
 .cards__header {
@@ -1167,8 +1170,8 @@ legend {
   .inner-page {
     padding: 40px 0;
   }
-  .main-page__row {
-    margin-bottom: 60px;
+  .main-page__content {
+    row-gap: 60px;
   }
   .article-main {
     row-gap: 20px;
@@ -1296,22 +1299,27 @@ legend {
   .header__scroll::after {
     transform: translateX(-63%);
   }
-  .main .container {
+  .main {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .main .container {
     width: 100%;
   }
   .inner-page .container {
     width: 100%;
   }
-  .main-page__row {
-    margin-bottom: 40px;
+  .main-page__content {
+    row-gap: 40px;
   }
   .article-main {
     flex-direction: column-reverse;
   }
   .article-main:nth-child(even) {
     flex-direction: column-reverse;
+  }
+  .article-main__header .title {
+    font-size: 34px;
   }
   .article-main__text p {
     margin-bottom: 0;
