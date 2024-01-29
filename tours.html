@@ -9,6 +9,7 @@
     
     <!-- style -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,11 +18,11 @@
     <!--// style -->
 
     <!-- open graph -->
-    <meta property="og:url" content= "http://b92582vu.beget.tech/forest-travel/tours.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Туры и направления - агенство Форест Тревел">
-    <meta property="og:description" content="Турпоходы по дикой природе">
-    <meta property="og:image" content="http://b92582vu.beget.tech/forest-travel/img/opengraph/opengraph-directions.jpg">
+    <meta property="og:url" content= "http://b92582vu.beget.tech/forest-travel/tours.html" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Туры и направления - агенство Форест Тревел"/>
+    <meta property="og:description" content="Турпоходы по дикой природе"/>
+    <meta property="og:image" content="http://b92582vu.beget.tech/forest-travel/img/opengraph/opengraph-directions.jpg"/>
     <!--// open graph --> 
 
     <!-- favicons -->
@@ -39,196 +40,147 @@
   </head>
   <body>
     <header class="header-inner">
-        <div class="header__top">
-            <div class="logo">ФорестТревел</div>
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="./index.html">Главная</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#!">Туры и направления</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./404.html">О компании</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./404.html">Галерея</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./contacts.html">Контакты</a>
-                </li>
-              </ul>
-    
-              <button class="nav-icon">
-                <span class="nav-icon__middle"></span>
-              </button>
-    
-            <!-- Мобильная навигация -->
-                <ul class="nav-mobile">
-                    <li><a href="./index.html">Главная</a></li>
-                    <li><a href="./tours.html">Туры и направления</a></li>
-                    <li><a href="./404.html">О компании</a></li>
-                    <li><a href="./404.html">Галерея</a></li>
-                    <li><a href="./contacts.html">Контакты</a></li>
-                </ul>
-            <!--// Мобильная навигация -->
-            </nav>
-    
-        </div>
+      <div class="header-top">
+        <div class="logo">ФорестТревел</div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./index.html">Главная</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="#!">Туры и направления</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./404.html">О компании</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./404.html">Галерея</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <button class="header-nav-button">
+            <img src="./img/header/menu.svg" alt="меню">
+          </button>
+        </nav>
+      </div>
     </header>
     
     <main class="inner-page">
-        <section class="cards">
-            <div class="container">
-                <div class="cards__header">
-                    <h1 class="title">Туры и направления</h1>
+      <div class="container">
+        <div class="inner-page-header">
+          <h1 class="main-header">Туры и направления</h1>
+        </div>
+
+        <!-- cards wrapper -->
+        <div class="cards-wrapper">
+          <!-- row -->
+          <div class="cards-row">
+            <a class="standart-card" href="#!">
+              <picture><img src="./img/cards/card-01.jpg" alt="Бесплатные туры"></picture>
+              <div class="card-title-wrapper">
+                <h2 class="card-title">
+                  Бесплатные туры Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Accusantium, cupiditate sequi laboriosam eum
+                  tenetur in? Amet, autem quos repudiandae minima quibusdam
+                  praesentium nobis velit, ex asperiores est debitis molestiae.
+                  Delectus!
+                </h2>
+              </div>
+            </a>
+
+            <a class="standart-card" href="#!">
+              <picture><img src="./img/cards/card-02.jpg" alt="Невероятные приключения"></picture>
+              <div class="card-title-wrapper extreme-color">
+                <h2 class="card-title">Невероятные приключения</h2>
+              </div>
+            </a>
+          </div>
+          <!-- // row -->
+          <!-- row -->
+          <div class="cards-row">
+            <div class="cards-column">
+              <a class="wide-card" href="./tracking.html">
+                <picture><img src="./img/cards/card-03.jpg" alt="Трекинг походы"></picture>
+                <div class="card-title-wrapper adventures-color">
+                  <h2 class="card-title">Трекинг походы</h2>
                 </div>
+              </a>
 
-                <!-- cards -->
-                <div class="cards__wrapper">
-                    <!-- row -->
-                    <div class="cards__row">
-                        <!-- card -->
-                        <a class="card" href="#!">
-                            <picture>
-                                <source srcset="./img/cards/card-xs-01.jpg" media="(max-width: 599px)">
-                                <source srcset="./img/cards/card-mobile-01.jpg" media="(max-width: 899px)">
-                                <source srcset="./img/cards/card-tablet-01.jpg" media="(max-width: 1199px)">
-                                <img src="./img/cards/card-01.jpg" alt="Бесплатные туры">
-                            </picture>
-                            <div class="card__title-wrapper">
-                                <h2 class="card__title">
-                                Бесплатные туры Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Accusantium, cupiditate sequi laboriosam eum
-                                tenetur in? Amet, autem quos repudiandae minima quibusdam
-                                praesentium nobis velit, ex asperiores est debitis molestiae.
-                                Delectus!
-                                </h2>
-                            </div>
-                        </a>
-                        <!--//card -->
-
-                        <!-- card -->
-                        <a class="card" href="#!">
-                            <picture>
-                                <source srcset="./img/cards/card-xs-02.jpg" media="(max-width: 599px)">
-                                <source srcset="./img/cards/card-mobile-02.jpg" media="(max-width: 899px)">
-                                <source srcset="./img/cards/card-tablet-02.jpg" media="(max-width: 1199px)">
-                                <img src="./img/cards/card-02.jpg" alt="Экстремальный отдых">
-                            </picture>
-                            <div class="card__title-wrapper card__title-wrapper--extreme">
-                                <h2 class="card__title">Экстремальный отдых</h2>
-                            </div>
-                        </a>
-                        <!--// card -->
-                    </div>
-                    <!-- // row -->
-                    <!-- row -->
-                    <div class="cards__row">
-                        <div class="cards__column">
-
-                        <!-- card -->
-                        <a class="card card--wide" href="#!">
-                            <picture>
-                                <source srcset="./img/cards/card-xs-03.jpg" media="(max-width: 599px)">
-                                <source srcset="./img/cards/card-mobile-03.jpg" media="(max-width: 899px)">
-                                <source srcset="./img/cards/card-tablet-03.jpg" media="(max-width: 1199px)">
-                                <img src="./img/cards/card-03.jpg" alt="Невероятные приключения">
-                            </picture>
-                            <div class="card__title-wrapper card__title-wrapper--adventures">
-                                <h2 class="card__title">Невероятные приключения</h2>
-                            </div>
-                        </a>
-                        <!--// card -->
-
-                        <!-- card -->
-                        <a class="card card--wide" href="./tracking.html">
-                            <picture>
-                                <source srcset="./img/cards/card-xs-04.jpg" media="(max-width: 599px)">
-                                <source srcset="./img/cards/card-mobile-04.jpg" media="(max-width: 899px)">
-                                <source srcset="./img/cards/card-tablet-04.jpg" media="(max-width: 1199px)">
-                                <img src="./img/cards/card-04.jpg" alt="Трекинг походы">
-                            </picture>
-                            <div class="card__title-wrapper card__title-wrapper--hiking">
-                                <h2 class="card__title">Трекинг походы</h2>
-                            </div>
-                        </a>
-                        <!--// card -->
-                        </div>
-
-                        <div class="cards__column">
-                            <!-- card -->
-                            <a class="card card--high" href="#!">
-                                <picture>
-                                    <source srcset="./img/cards/card-xs-05.jpg" media="(max-width: 599px)">
-                                    <source srcset="./img/cards/card-mobile-05.jpg" media="(max-width: 899px)"> 
-                                    <source srcset="./img/cards/card-tablet-05.jpg" media="(max-width: 1199px)">
-                                    <img src="./img/cards/card-05.jpg" alt="Экзотические джунгли">
-                                </picture>
-                                <div class="card__title-wrapper card__title-wrapper--exotic">
-                                    <h2 class="card__title">Экзотические джунгли</h2>
-                                </div>
-                            </a>
-                            <!--// card -->
-                        </div>
-                    </div>
-                    <!-- // row -->
+              <a class="wide-card" href="#!">
+                <picture><img src="./img/cards/card-04.jpg" alt="Экстремальный отдых"></picture>
+                <div class="card-title-wrapper hiking-color">
+                  <h2 class="card-title">Экстремальный отдых</h2>
                 </div>
-                <!-- // card-wrapper -->
+              </a>
             </div>
-        </section>
+
+            <div class="cards-column">
+              <a class="high-card" href="#!">
+                <picture><img src="./img/cards/card-05.jpg" alt="Экзотические джунгли"></picture>
+                <div class="card-title-wrapper exotic-color">
+                  <h2 class="card-title">Экзотические джунгли</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- // row -->
+        </div>
+        <!-- // card-wrapper -->
+      </div>
     </main>
 
     <footer class="footer">
-        <div class="container">
-          <div class="footer__row">
-
-            <div class="footer__copyright">
-              <div class="footer__logo">
-                <div class="logo">ФорестТревел</div>
-              </div>
-              <p>
-                При поддержке Управления по туризму Российской Федерации.
-                ФорестТревел. Все права защищены. Copyright&#160;&#169;&#160;2024
-              </p>
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-copyright">
+            <div class="footer-logo">
+              <div class="logo">ФорестТревел</div>
             </div>
-  
-            <div class="footer__widgets-wrapper">
-              <div class="footer-widget footer-widget--info">
-                <h3 class="footer-widget__title">Информация</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="./index.html">Главная</a></li>
-                  <li><a href="./404.html">О компании</a></li>
-                  <li><a href="./404.html">Галерея</a></li>
-                  <li><a href="./404.html">Блог</a></li>
-                </ul>
-              </div>
-  
-              <div class="footer-widget footer-widget--services">
-                <h3 class="footer-widget__title">Услуги</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="./404.html">Бесплатные туры</a></li>
-                  <li><a href="./404.html">Невероятные приключения</a></li>
-                  <li><a href="./404.html">Экстремальный отдых</a></li>
-                  <li><a href="./404.html">Экзотические джунгли</a></li>
-                  <li><a href="./tracking.html">Трекинг походы</a></li>
-                </ul>
-              </div>
-  
-              <div class="footer-widget footer-widget--contacts">
-                <h3 class="footer-widget__title">Контакты</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
-                  <li><a href="mailto:info@foresttravel.com">info@foresttravel.com</a></li>
-                  <li>г. Москва, Рязанский проспект 54, офис 112.</li>
-                </ul>
-              </div>
+            <p>
+              При поддержке Управления по туризму Российской Федерации.
+              ФорестТревел. Все права защищены. Copyright © 2021
+            </p>
+          </div>
+
+          <div class="footer-widgets-wrapper">
+            <div class="footer-widget footer-widget-info">
+              <h3 class="footer-widget-title">Информация</h3>
+              <ul class="footer-widget-list">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./404.html">О компании</a></li>
+                <li><a href="./404.html">Галерея</a></li>
+                <li><a href="./404.html">Блог</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-widget footer-widget-services">
+              <h3 class="footer-widget-title">Услуги</h3>
+              <ul class="footer-widget-list">
+                <li><a href="./404.html">Бесплатные туры</a></li>
+                <li><a href="./404.html">Невероятные приключения</a></li>
+                <li><a href="./404.html">Экстремальный отдых</a></li>
+                <li><a href="./404.html">Экзотические джунгли</a></li>
+                <li><a href="./tracking.html">Трекинг походы</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-widget footer-widget-contacts">
+              <h3 class="footer-widget-title">Контакты</h3>
+              <ul class="footer-widget-list">
+                <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
+                <li>
+                  <a href="mailto:info@foresttravel.com"
+                    >info@foresttravel.com</a
+                  >
+                </li>
+                <li>г. Москва, Рязанский проспект 54, офис 112.</li>
+              </ul>
             </div>
           </div>
         </div>
-      </footer>
-      
-    <script src="./js/main.js"></script>
+      </div>
+    </footer>
   </body>
 </html>

@@ -9,6 +9,7 @@
 
     <!-- style -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,11 +18,11 @@
     <!--// style -->
 
     <!-- open graph -->
-    <meta property="og:url" content= "http://b92582vu.beget.tech/forest-travel/contacts.html" >
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Контакты - агенство Форест Тревел">
-    <meta property="og:description" content="Турпоходы по дикой природе">
-    <meta property="og:image" content="http://b92582vu.beget.tech/forest-travel/img/opengraph/opengraph-directions.jpg">
+    <meta property="og:url" content= "http://b92582vu.beget.tech/forest-travel/contacts.html" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Контакты - агенство Форест Тревел"/>
+    <meta property="og:description" content="Турпоходы по дикой природе"/>
+    <meta property="og:image" content="http://b92582vu.beget.tech/forest-travel/img/opengraph/opengraph-directions.jpg"/>
     <!--// open graph -->
 
     <!-- favicons -->
@@ -38,235 +39,196 @@
   </head>
   <body>
     <header class="header-inner">
-        <div class="header__top">
-          <div class="logo">ФорестТревел</div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="./index.html">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./tours.html">Туры и направления</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./404.html">О компании</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./404.html">Галерея</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./contacts.html">Контакты</a>
-              </li>
-            </ul>
-  
-            <button class="nav-icon">
-              <span class="nav-icon__middle"></span>
-            </button>
-  
-          <!-- Мобильная навигация -->
-              <ul class="nav-mobile">
-                  <li><a href="#!">Главная</a></li>
-                  <li><a href="./tours.html">Туры и направления</a></li>
-                  <li><a href="./404.html">О компании</a></li>
-                  <li><a href="./404.html">Галерея</a></li>
-                  <li><a href="./contacts.html">Контакты</a></li>
-              </ul>
-          <!--// Мобильная навигация -->
-          </nav>
-  
-        </div>
+      <div class="header-top">
+        <div class="logo">ФорестТревел</div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./index.html">Главная</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./tours.html">Туры и направления</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./404.html">О компании</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./404.html">Галерея</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="#!">Контакты</a>
+            </li>
+          </ul>
+          <button class="header-nav-button">
+            <img src="./img/header/menu.svg" alt="меню">
+          </button>
+        </nav>
+      </div>
     </header>
-    
     <main class="inner-page">
+        <div class="container">
+            <div class="contacts-header">
+                <h1 class="main-header">Контактная информация</h1>
+            </div>
+            <div class="contact-row">
+                <!-- contact-info -->
+                <div class="contact-info">
 
-        <section class="contacts">
-            <div class="container">
-                <div class="contacts__header">
-                    <h1 class="title">Контактная информация</h1>
-                </div>
-                <div class="contacts__row">
+                    <div class="contact-block">
+                        <h3 class="contact-block-title">
+                            Телефон и адрес
+                        </h3>
 
-                    <!-- contact-info -->
-                    <div class="contacts__info">
-
-                        <!-- block -->
-                        <div class="contact-block">
-                            <h3 class="contact-block__title">Телефон и адрес</h3>
-
-                            <div class="contact-block__body">
-                                <ul class="contact-block__list">
-                                    <li class="contact-block__icon phone"><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
-                                    <li class="contact-block__icon mail"><a href="mailto:info@foresttravel.com">info@foresttravel.com</a></li>
-                                    <li class="contact-block__icon adress">г. Москва, Рязанский проспект 54, офис 112.</li>
-                                </ul>
-                            </div>
-                            
+                        <div class="contact-block-body">
+                            <ul class="contact-list">
+                                <li class="contact-list-icon phone"><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
+                                <li class="contact-list-icon mail"><a href="mailto:info@foresttravel.com">info@foresttravel.com</a></li>
+                                <li class="contact-list-icon adress">г. Москва, Рязанский проспект 54, офис 112.</li>
+                            </ul>
                         </div>
-                        <!--// block -->
-
-                        <!-- block -->
-                        <div class="contact-block">
-                            <h3 class="contact-block__title">Карта</h3>
-
-                            <div class="contact-block__body">
-                                <div class="contact-block__map">
-                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1e22ab64af88de67dfc0d13e708c502da722038722c8bea80c09968a942443b&amp;source=constructor"></iframe>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <!--// block -->
                         
                     </div>
-                    <!--// contact-info -->
 
-                    <!-- contact-form -->
-                    <form class="form">
-                        <h3 class="form__title">Заявка на подбор тура</h3>
-                        <!-- form-group -->
-                        <fieldset class="form__group">
-                            <legend class="form__legend">Личные данные</legend>
+                    <div class="contact-block">
+                        <h3 class="contact-block-title">
+                            Карта
+                        </h3>
 
-                            <div class="form__input-wrapper">
-                                <input class="input" type="text" placeholder="Введите имя">
-                            </div>
-                            <div class="form__input-row">
-                                <input class="input" type="tel" placeholder="Телефон" required>
-                                <input class="input" type="email" placeholder="Email" required>
-                            </div>
+                        <div class="contact-block-body">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1e22ab64af88de67dfc0d13e708c502da722038722c8bea80c09968a942443b&amp;source=constructor" width="470" height="345"></iframe>
+                        </div>
                         
-                        </fieldset>
-                        <!--// form-group -->
-
-                        <!-- form-group -->
-                        <fieldset class="form__group">
-                            <legend class="form__legend">Количество человек для тура</legend>
-
-                            <div class="form__radio">
-                                <label class="radio">
-                                    <input name="number-of-people" class="radio__real" type="radio">
-                                    <span class="radio__custom"></span>
-                                    <span>2 - 4 человека</span>
-                                </label>
-                            </div>
-
-                            <div class="form__radio">
-                                <label class="radio">
-                                    <input name="number-of-people" class="radio__real" type="radio">
-                                    <span class="radio__custom"></span>
-                                    <span>5 - 10 человек</span>
-                                </label>
-                            </div>
-
-                            <div class="form__radio">
-                                <label class="radio">
-                                    <input name="number-of-people" class="radio__real" type="radio">
-                                    <span class="radio__custom"></span>
-                                    <span>11 человек и более</span>
-                                </label>
-                            </div>
-                            
-                        </fieldset>
-                        <!--// form-group -->
-
-                        <!-- form-group -->
-                        <fieldset class="form__group">
-                            <legend class="form__legend">Какие направления вам интересны</legend>
-
-                            <div class="form__checkbox">
-
-                                <label class="checkbox">
-                                    <input name="directions-are-interested" class="checkbox__real" type="checkbox">
-                                    <span class="checkbox__custom"></span>
-                                    <span>Трекинг туры, походы по горам и пересеченной местности.</span>
-                                </label>
-
-                            </div>
-
-                            <div class="form__checkbox">
-                                <label class="checkbox">
-                                    <input name="directions-are-interested" class="checkbox__real" type="checkbox">
-                                    <span class="checkbox__custom"></span>
-                                    <span>Восхождения на вершины.</span>
-                                </label>
-                            </div>
-
-                            <div class="form__checkbox">
-                                <label class="checkbox">
-                                    <input name="directions-are-interested" class="checkbox__real" type="checkbox">
-                                    <span class="checkbox__custom"></span>
-                                    <span>Экзотические джунгли, вулканы.</span>
-                                </label>
-                            </div>
-
-                            <div class="form__checkbox">
-                                <label class="checkbox">
-                                    <input name="directions-are-interested" class="checkbox__real" type="checkbox">
-                                    <span class="checkbox__custom"></span>
-                                    <span>Комбинированные: море, горы, города, лес.</span>
-                                </label>
-                            </div>
-                        </fieldset>
-                        <!--// form-group -->
-                        <input class="button" type="submit" value="Отправить заявку">
-                      
-                        
-                    </form>
-                    <!--// contact-form -->
+                    </div>
+                    
                 </div>
+                  <!--// contact-info -->
+
+                  <!-- contact-form -->
+                <form class="form">
+                    <h3 class="form-title">Заявка на подбор тура</h3>
+                    <!-- form-group -->
+                    <fieldset class="form-group">
+                        <legend class="form-group-title">Личные данные</legend>
+
+                        <div class="form-input-wrapper">
+                        <input class="input" type="text" placeholder="Введите имя">
+                        </div>
+                        <div class="form-group-row">
+                            <input class="input" type="tel" placeholder="Телефон" required>
+                            <input class="input" type="email" placeholder="Email" required>
+                        </div>
+                    
+                    </fieldset>
+                    <!--// form-group -->
+
+                    <!-- form-group -->
+                    <fieldset class="form-group">
+                        <legend class="form-group-title">Количество человек для тура</legend>
+
+                        <label class="radio-row">
+                            <input name="number-of-people" class="real-radio" type="radio">
+                            <span class="custom-radio"></span>
+                            <span>2 - 4 человека</span>
+                        </label>
+
+                        <label class="radio-row">
+                            <input name="number-of-people" class="real-radio" type="radio">
+                            <span class="custom-radio"></span>
+                            <span>5 - 10 человек</span>
+                        </label>
+
+                        <label class="radio-row">
+                            <input name="number-of-people" class="real-radio" type="radio">
+                            <span class="custom-radio"></span>
+                            <span>11 человек и более</span>
+                        </label>
+                        
+                    </fieldset>
+                    <!--// form-group -->
+
+                    <!-- form-group -->
+                    <fieldset class="form-group">
+                        <legend class="form-group-title">Какие направления вам интересны</legend>
+                        <label class="checkbox-row">
+                            <input name="directions-are-interested" class="real-checkbox" type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Трекинг туры, походы по горам и пересеченной местности.</span>
+                        </label>
+
+                        <label class="checkbox-row">
+                            <input name="directions-are-interested" class="real-checkbox" type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Восхождения на вершины.</span>
+                        </label>
+
+                        <label class="checkbox-row">
+                            <input name="directions-are-interested" class="real-checkbox" type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Экзотические джунгли, вулканы.</span>
+                        </label>
+
+                        <label class="checkbox-row">
+                            <input name="directions-are-interested" class="real-checkbox" type="checkbox">
+                            <span class="custom-checkbox"></span>
+                            <span>Комбинированные: море, горы, города, лес.</span>
+                        </label>
+                    </fieldset>
+                    <!--// form-group -->
+                  <input class="button" type="submit" value="Отправить заявку">
+                </form>
+                <!--// contact-form -->
             </div>
-        </section>
+        </div>
 
     </main>
-
     <footer class="footer">
-        <div class="container">
-          <div class="footer__row">
-            <div class="footer__copyright">
-              <div class="footer__logo">
-                <div class="logo">ФорестТревел</div>
-              </div>
-              <p>
-                При поддержке Управления по туризму Российской Федерации.
-                ФорестТревел. Все права защищены. Copyright&#160;&#169;&#160;2024
-              </p>
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-copyright">
+            <div class="footer-logo">
+              <div class="logo">ФорестТревел</div>
             </div>
-  
-            <div class="footer__widgets-wrapper">
-              <div class="footer-widget footer-widget--info">
-                <h3 class="footer-widget__title">Информация</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="./index.html">Главная</a></li>
-                  <li><a href="./404.html">О компании</a></li>
-                  <li><a href="./404.html">Галерея</a></li>
-                  <li><a href="./404.html">Блог</a></li>
-                </ul>
-              </div>
-  
-              <div class="footer-widget footer-widget--services">
-                <h3 class="footer-widget__title">Услуги</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="./404.html">Бесплатные туры</a></li>
-                  <li><a href="./404.html">Невероятные приключения</a></li>
-                  <li><a href="./404.html">Экстремальный отдых</a></li>
-                  <li><a href="./404.html">Экзотические джунгли</a></li>
-                  <li><a href="./tracking.html">Трекинг походы</a></li>
-                </ul>
-              </div>
-  
-              <div class="footer-widget footer-widget--contacts">
-                <h3 class="footer-widget__title">Контакты</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
-                  <li><a href="mailto:info@foresttravel.com">info@foresttravel.com</a></li>
-                  <li>г. Москва, Рязанский проспект 54, офис 112.</li>
-                </ul>
-              </div>
+            <p>
+              При поддержке Управления по туризму Российской Федерации.
+              ФорестТревел. Все права защищены. Copyright © 2021
+            </p>
+          </div>
+
+          <div class="footer-widgets-wrapper">
+            <div class="footer-widget footer-widget-info">
+              <h3 class="footer-widget-title">Информация</h3>
+              <ul class="footer-widget-list">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./404.html">О компании</a></li>
+                <li><a href="./404.html">Галерея</a></li>
+                <li><a href="./404.html">Блог</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-widget footer-widget-services">
+              <h3 class="footer-widget-title">Услуги</h3>
+              <ul class="footer-widget-list">
+                <li><a href="./404.html">Бесплатные туры</a></li>
+                <li><a href="./404.html">Невероятные приключения</a></li>
+                <li><a href="./404.html">Экстремальный отдых</a></li>
+                <li><a href="./404.html">Экзотические джунгли</a></li>
+                <li><a href="./tracking.html">Трекинг походы</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-widget footer-widget-contacts">
+              <h3 class="footer-widget-title">Контакты</h3>
+              <ul class="footer-widget-list">
+                <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
+                <li>
+                  <a href="mailto:info@foresttravel.com">info@foresttravel.com</a>
+                </li>
+                <li>г. Москва, Рязанский проспект 54, офис 112.</li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
     </footer>
-
-    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -1,200 +1,87 @@
-/* Mobile */
 @media (max-width: 899px) {
-    .title {
-        font-size: 42px;
+    .container {
+        width: 600px;
     }
 
-    .button {
-        padding-left: 35px;
-        padding-right: 35px;
-        height: 46px;
-        font-size: 18px;
-        line-height: 46px;
-    }
-
-    .header {
-        @include bgImage("./../img/header/header-bg-mobile.jpg");
-    }
-
-    .header__content {
-        padding-top: 0;
+    /* header */
+    .header-content {
         width: 100%;
-        transform: translate(-50%, -59%);
-
-        p {
-            font-size: 20px;
-        }
     }
 
-    .header__title {
-        margin-bottom: 20px;
+    .header-title {
         font-size: 42px;
     }
 
-    .header-inner {
-        height: 80px;
-        @include bgImage("./../img/header/header-small-bg-mobile.jpg");
-
-        .logo {
-            font-size: 30px;
-        }
+    .header-content {
+        transform: translate(-50%, -61%);
     }
 
+    .header-content p {
+        font-size: 20px;
+    }
+
+    .header-inner .logo {
+        font-size: 30px;
+    }
+
+    /* main-page */
     .main {
         padding: 60px 0;
-
-        .container {
-            width: 100%;
-        }
-    }
-
-    .inner-page {
-        padding: 40px 0;
-    }
-
-    .main-page__content {
-        row-gap: 60px;
     } 
 
-    .article-main {
+    .main .container {
+        width: 100%;
+    }
+
+    .main-row {
+        margin-bottom: 60px;
         row-gap: 20px;
         flex-direction: row-reverse;
+    } 
 
-        &:nth-child(even) {
-            flex-direction: row-reverse;
-        }
+    .main-row:nth-child(even) {
+        flex-direction: row-reverse;
     }
 
-    .article-main__content {
-        width: auto;
+    .main-header {
+        font-size: 42px;
     }
 
-    .article-main__text {
-        margin-bottom: 20px;
-        font-size: 16px;
-    }
-    
-    .article-main__img {
+    .main-img {
         flex-shrink: 0;
         width: 170px;
         height: 393px;
     }
 
-    .cards__row {
-        flex-direction: column;
-        column-gap: 0;
-        row-gap: 30px
+    .main-content {
+        width: auto;
     }
 
-    .card {
-        width: 570px;
-    }
-
-    .card__title-wrapper {
-        max-width: 899px;
-    }
-
-    .article-page__row {
-        flex-wrap: wrap-reverse;
-        row-gap: 40px;
-    }
-
-    .article-page__nav {
-        padding-top: 0;
-    }
-
-    .nav-article {
-        width: 100%;
-    }
-
-    .nav-article__title {
+    .main-content-text {
         margin-bottom: 20px;
-    }
-
-    .nav-article__list a {
-        padding-top: 15px;
-    }
-
-    .article {
         font-size: 16px;
-
-        h1 {
-            font-size: 42px;
-        }
-
-        p {
-            margin-bottom: 16px;
-        }
-
-        h2, h3, h4, h5 {
-            padding-top: 5px;
-            margin-bottom: 10px;
-        }
     }
 
-    .article__img {
-        margin-top: 20px;
-        margin-bottom: 22px;
-        width: 100%;
-    }
-
-    .contacts__header {
-        margin-bottom: 30px;
-    }
-
-    .contacts__info {
-        flex-direction: column;
-        row-gap: 40px;
-    }
-
-    .contact-block__map {
-        width: 570px;
-        height: 310px;
-    }
-
-    .form {
-        padding: 30px;
-
-        .button {
-            padding-left: 30px;
-            padding-right: 30px;
-            font-size: 18px;
-        }
-    }
-
-    .form__group:last-of-type {
-        margin-bottom: 30px;
-    }
-
-    .input {
-        padding-left: 19px;
-        padding-right: 19px;
-    }
-
-    .form__input-row input:last-child {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
+    /* Footer */
     .footer {
         padding: 40px 0;
-
-        .container {
-            width: 100%;
-        }
     }
 
-    .footer__row {
+    .footer .container {
+        width: 100%;
+    }
+
+    .footer-row {
         flex-direction: column-reverse;
         row-gap: 50px;
     }
 
-    .footer__widgets-wrapper {
+    .footer-widgets-wrapper {
         padding-top: 0;
         width: 100%;
     }
 
-    .footer__copyright {
+    .footer-copyright {
         width: 100%;
     }
 }

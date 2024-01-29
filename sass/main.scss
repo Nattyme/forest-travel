@@ -1,37 +1,13 @@
 // Base
-@import "./base/vars";
-@import "./base/mixins";
 @import "./base/reset";
-@import "./base/container";
 @import "./base/base";
 
 // Blocks 
 @import "./blocks/button";
+@import "./blocks/header";
 @import "./blocks/logo";
-@import "./blocks/nav";
-@import "./blocks/nav-icon";
-@import "./blocks/nav-mobile";
-@import "./blocks/title";
-@import "./blocks/article-main";
-@import "./blocks/card";
-@import "./blocks/nav-article";
-@import "./blocks/article";
-@import "./blocks/contact-block";
-@import "./blocks/form";
-@import "./blocks/input";
-@import "./blocks/radio";
-@import "./blocks/checkbox";
-@import "./blocks/footer-widget";
-
-// Sections
-@import "./sections/header";
-@import "./sections/header-inner";
-@import "./sections/main-page";
-@import "./sections/cards";
-@import "./sections/article-page";
-@import "./sections/contacts";
-@import "./sections/footer";
-@import "./sections/error";
+@import "./blocks/main";
+@import "./blocks/footer";
 
 // Media 
 @import "./media/tablet";

@@ -1,40 +1,34 @@
-/* Tablet */
 @media (max-width: 1199px) {
-    .title {
-        font-size: 50px;
-    }
-    
     /* header */
     .header {
         height: 591px;
     }
 
-    .header__top {
+    .header-top {
         padding-left: 15px;
         padding-right: 15px;
         width: 100%;
     }
 
-    .header__content {
-        padding-top: 7px;
+    .header-content {
         padding-left: 15px;
         padding-right: 15px;
         width: 900px;
     }
 
-    .nav__list {
+    .header-nav-button {
+        display: block;
+    }
+
+    .header-nav-list {
         display: none;
     }
 
-    .nav-icon {
-        display: flex;
-    }
-
-    .header__title {
+    .header-title {
         font-size: 52px;
     }
 
-    .header__scroll {
+    a.header-scroll {
         font-size: 0;
     }
 
@@ -43,184 +37,69 @@
         padding: 80px 0 82px;
     } 
 
-    .inner-page {
-        padding-bottom: 60px;
-    }
-
-    .main-page__content {
-        row-gap: 80px;
-    } 
-
-    .article-main {
-        column-gap: 30px;
-    }
-
-    .article-main__content {
+    .main-content {
         width: 420px;
     }
 
-    .article-main__header .title {
+    .main-img {
+        width: 420px;
+        height: 362px;
+    }
+
+    .main-content-header .main-header {
         line-height: 1;
     }
 
-    .article-main__img {
-        width: 420px;
-        height: 362px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    .main-header {
+        font-size: 50px;
     }
 
-    .article-main__text {
+    .main-content-text {
         margin-bottom: 20px;
         font-size: 18px;
     }
 
-    /* tours-page */
-    .cards__header {
-        margin-bottom: 40px;
-    }
-
-    .cards__wrapper {
-        align-items: center;
-    }
-
-    .card {
-        width: 420px;
-
-        &--wide {
-            width: 495px;
-        }
-
-        &--high {
-            width: 345px;
-        }
-    }
-
-    .card__title-wrapper {
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 60px;
-    }
-
-    .card__title {
-        font-size: 24px;
-    }
-   
-    /* tracking-page*/
-    .article-page__row {
+    .main-row {
+        margin-bottom: 80px;
         column-gap: 30px;
-    }
-
-    .article-page__nav {
-        flex-grow: 1;
-    }
-
-    .article {
-        width: 570px;
-        font-size: 18px;
-        flex-grow: 2;
-
-        h1 {
-            margin-bottom: 20px;
-            font-size: 50px;
-        }
-    }
-
-    .article__img {
-        margin-top: 31px;
-        margin-bottom: 31px;
-    }
-
-    .nav-article__list {
-        padding-right: 2px;
-        font-size: 18px;
-    }
-
-    /* contacts-page */
-    .contacts__row {
-        flex-direction: column;
-        row-gap: 40px;
-    }
-
-    .contacts__info {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .contact-block + .contact-block {
-        margin-top: 0;
-    }
-
-    .contact-block__title {
-        font-size: 24px;
-    }
-
-    .contact-block__list {
-        padding-top: 5px;
-        
-        li {
-            font-size: 18px;
-        }
-    }
-
-    .contact-block__map {
-        width: 420px;
-        height: 310px;
-    }
-
-    .form {
-        width: 100%;
-    }
-
-    .form__input-row input:last-child {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .input {
-        padding-left: 29px;
-        padding-right: 29px;
-    }
-
-    .footer {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .footer__copyright {
-        width: 225px;
-
-        p {
-            font-size: 14px;
-        }
-    }
-
-    .footer__logo {
-        margin-bottom: 20px;
-
-        .logo {
-            font-size: 30px;
-        }
-    }
-
-    .footer-widget {
-
-        &--services {
-            display: none;
-        }
-
-        &--info {
-            width: 195px;
-        }
-        
     } 
 
-    .footer-widget__title {
+    .main-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer-widget-services {
+        display: none;
+    } 
+
+    .footer-copyright {
+        width: 225px;
+    }
+
+    .footer-widget-info {
+        width: 195px;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo .logo {
+        font-size: 30px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+    }
+
+    .footer-widget-title {
         margin-bottom: 20px;
     }
 }

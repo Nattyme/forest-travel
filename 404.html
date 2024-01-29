@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ошибка 404</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,107 +26,95 @@
   </head>
   <body>
     <header class="header-inner">
-        <div class="header__top">
-            <div class="logo">ФорестТревел</div>
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="./index.html">Главная</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./tours.html">Туры и направления</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./404.html">О компании</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./404.html">Галерея</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./contacts.html">Контакты</a>
-                </li>
-              </ul>
-    
-              <button class="nav-icon">
-                <span class="nav-icon__middle"></span>
-              </button>
-    
-            <!-- Мобильная навигация -->
-                <ul class="nav-mobile">
-                    <li><a href="./index.html">Главная</a></li>
-                    <li><a href="./tours.html">Туры и направления</a></li>
-                    <li><a href="./404.html">О компании</a></li>
-                    <li><a href="./404.html">Галерея</a></li>
-                    <li><a href="./contacts.html">Контакты</a></li>
-                </ul>
-            <!--// Мобильная навигация -->
-            </nav>
-    
-        </div>
+      <div class="header-top">
+        <div class="logo">ФорестТревел</div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./index.html">Главная</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="#!">Туры и направления</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="#!">О компании</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="#!">Галерея</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <button class="header-nav-button">
+            <img src="./img/header/menu.svg" alt="меню">
+          </button>
+        </nav>
+      </div>
     </header>
     
     <main class="inner-page">
-        <section class="error">
-            <div class="container">
-                    <div class="error__header">
-                        <h1 class="title">Ошибка 404</h1>
-                        <p>
-                        Такой страницы не существует.
-                        <a class="text-link" href="./index.html">Вернитесь на главную.</a>
-                        </p>
-                    </div>
-            </div>
-        </section>
-
+      <div class="container">
+        <div class="inner-page-header">
+          <h1 class="main-header">Ошибка 404</h1>
+          <p>
+            Такой страницы не существует.
+            <a class="text-link" href="./index.html">Вернитесь на главную.</a>
+        </p>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <div class="container">
-          <div class="footer__row">
-            <div class="footer__copyright">
-              <div class="footer__logo">
-                <div class="logo">ФорестТревел</div>
-              </div>
-              <p>
-                При поддержке Управления по туризму Российской Федерации.
-                ФорестТревел. Все права защищены. Copyright&#160;&#169;&#160;2024
-              </p>
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-copyright">
+            <div class="footer-logo">
+              <div class="logo">ФорестТревел</div>
             </div>
-  
-            <div class="footer__widgets-wrapper">
-              <div class="footer-widget footer-widget--info">
-                <h3 class="footer-widget__title">Информация</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="./index.html">Главная</a></li>
-                  <li><a href="./404.html">О компании</a></li>
-                  <li><a href="./404.html">Галерея</a></li>
-                  <li><a href="./404.html">Блог</a></li>
-                </ul>
-              </div>
-  
-              <div class="footer-widget footer-widget--services">
-                <h3 class="footer-widget__title">Услуги</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="./404.html">Бесплатные туры</a></li>
-                  <li><a href="./404.html">Невероятные приключения</a></li>
-                  <li><a href="./404.html">Экстремальный отдых</a></li>
-                  <li><a href="./404.html">Экзотические джунгли</a></li>
-                  <li><a href="./tracking.html">Трекинг походы</a></li>
-                </ul>
-              </div>
-  
-              <div class="footer-widget footer-widget--contacts">
-                <h3 class="footer-widget__title">Контакты</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
-                  <li><a href="mailto:info@foresttravel.com">info@foresttravel.com</a></li>
-                  <li>г. Москва, Рязанский проспект 54, офис 112.</li>
-                </ul>
-              </div>
+            <p>
+              При поддержке Управления по туризму Российской Федерации.
+              ФорестТревел. Все права защищены. Copyright © 2021
+            </p>
+          </div>
+
+          <div class="footer-widgets-wrapper">
+            <div class="footer-widget footer-widget-info">
+              <h4 class="footer-widget-title">Информация</h4>
+              <ul class="footer-widget-list">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="#!">О компании</a></li>
+                <li><a href="#!">Галерея</a></li>
+                <li><a href="#!">Блог</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-widget footer-widget-services">
+              <h4 class="footer-widget-title">Услуги</h4>
+              <ul class="footer-widget-list">
+                <li><a href="#!">Бесплатные туры</a></li>
+                <li><a href="#!">Невероятные приключения</a></li>
+                <li><a href="#!">Экстремальный отдых</a></li>
+                <li><a href="#!">Экзотические джунгли</a></li>
+                <li><a href="./tracking.html">Трекинг походы</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-widget footer-widget-contacts">
+              <h4 class="footer-widget-title">Контакты</h4>
+              <ul class="footer-widget-list">
+                <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
+                <li>
+                  <a href="mailto:info@foresttravel.com"
+                    >info@foresttravel.com</a
+                  >
+                </li>
+                <li>г. Москва, Рязанский проспект 54, офис 112.</li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
     </footer>
-    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -9,6 +9,7 @@
 
     <!-- style -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,11 +18,11 @@
     <!--// style -->
 
     <!-- open graph -->
-    <meta property="og:url" content= "http://b92582vu.beget.tech/forest-travel/tracking.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Трекинг походы - агенство Форест Тревел">
-    <meta property="og:description" content="Турпоходы по дикой природе">
-    <meta property="og:image" content="http://b92582vu.beget.tech/forest-travel/img/opengraph/opengraph-tracking.jpg">
+    <meta property="og:url" content= "http://b92582vu.beget.tech/forest-travel/tracking.html" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Трекинг походы - агенство Форест Тревел"/>
+    <meta property="og:description" content="Турпоходы по дикой природе"/>
+    <meta property="og:image" content="http://b92582vu.beget.tech/forest-travel/img/opengraph/opengraph-tracking.jpg"/>
     <!--// open graph -->
 
     <!-- favicons -->
@@ -38,142 +39,117 @@
   </head>
   <body>
     <header class="header-inner">
-        <div class="header__top">
-          <div class="logo">ФорестТревел</div>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="./index.html">Главная</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./tours.html">Туры и направления</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./404.html">О компании</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./404.html">Галерея</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./contacts.html">Контакты</a>
-              </li>
-            </ul>
-  
-            <button class="nav-icon">
-              <span class="nav-icon__middle"></span>
-            </button>
-  
-          <!-- Мобильная навигация -->
-              <ul class="nav-mobile">
-                  <li><a href="./index.html">Главная</a></li>
-                  <li><a href="./tours.html">Туры и направления</a></li>
-                  <li><a href="./404.html">О компании</a></li>
-                  <li><a href="./404.html">Галерея</a></li>
-                  <li><a href="./contacts.html">Контакты</a></li>
-              </ul>
-          <!--// Мобильная навигация -->
-          </nav>
-  
-        </div>
+      <div class="header-top">
+        <div class="logo">ФорестТревел</div>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./index.html">Главная</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./tours.html">Туры и направления</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./404.html">О компании</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./404.html">Галерея</a>
+            </li>
+            <li class="header-nav-list-item">
+              <a class="header-nav-link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <button class="header-nav-button">
+            <img src="./img/header/menu.svg" alt="меню">
+          </button>
+        </nav>
+      </div>
     </header>
 
     <main class="inner-page">
+        <div class="container">
 
-        <div class="article-page">
-            <div class="container">
+            <div class="row-article-page">
+                <nav class="article-page-nav">
+                    <h3 class="article-page-nav-title">Туры и направления</h3>
+                    <ul class="article-page-nav-list">
+                        <li><a href="#!">Бесплатные туры</a></li>
+                        <li><a href="#!">Невероятные приключения. Пункт длинной в две строки.</a></li>
+                        <li><a href="#!">Экстремальный отдых</a></li>
+                        <li><a href="#!" class="active">Трекинг походы</a></li>
+                        <li><a href="#!">Экзотические джунгли</a></li>
+                    </ul>
+                </nav>
 
-                <div class="article-page__row">
-                    <div class="article-page__nav">
-                        <nav class="nav-article">
-                            <h3 class="nav-article__title">Туры и направления</h3>
-                            <ul class="nav-article__list">
-                                <li><a href="#!">Бесплатные туры</a></li>
-                                <li><a href="#!">Невероятные приключения. Пункт длинной в две строки.</a></li>
-                                <li><a href="#!">Экстремальный отдых</a></li>
-                                <li><a href="#!" class="active">Трекинг походы</a></li>
-                                <li><a href="#!">Экзотические джунгли</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    
-                    <article class="article">
-                        <h1 class="title">Трекинг походы</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="text-bold">Ut enim ad minim</span> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="text-link" href="#!">Duis aute irure</a> dolor in reprehenderit <span class="text-bold">in voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        
-                        <div class="article__img">
-                            <img src="./img/articles/tracking-img.jpg" alt="Трекинг походы">
-                        </div>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="text-bold">Ut enim ad</span> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="text-link" href="#!">Duis aute irure</a> dolor in reprehenderit <span class="text-bold">in voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        
-                        <h2>Заголовок второго уровня</h2>
-
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                        
-                        <h3>Заголовок третьего уровня</h3>
-
-                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-                        
-                        <h4>Заголовок четвертого уровня</h4>
-
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
-                    </article>
-                </div>
-
+                <article class="article-page-article">
+                    <h1>Трекинг походы</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="text-bold">Ut enim ad minim</span> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#!" class="text-link">Duis aute irure</a> dolor in reprehenderit <span class="text-bold">in voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <img src="./img/articles/tracking-img.jpg" alt="Трекинг походы">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="text-bold">Ut enim ad</span> minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#!" class="text-link">Duis aute irure</a> dolor in reprehenderit <span class="text-bold">in voluptate</span> velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h2>Заголовок второго уровня</h2>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <h3>Заголовок третьего уровня</h3>
+                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                    <h4>Заголовок четвертого уровня</h4>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+                </article>
             </div>
+
         </div>
 
     </main>
     
     <footer class="footer">
-        <div class="container">
-          <div class="footer__row">
-            <div class="footer__copyright">
-              <div class="footer__logo">
-                <div class="logo">ФорестТревел</div>
-              </div>
-              <p>
-                При поддержке Управления по туризму Российской Федерации.
-                ФорестТревел. Все права защищены. Copyright&#160;&#169;&#160;2024
-              </p>
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-copyright">
+            <div class="footer-logo">
+              <div class="logo">ФорестТревел</div>
             </div>
-  
-            <div class="footer__widgets-wrapper">
-              <div class="footer-widget footer-widget--info">
-                <h3 class="footer-widget__title">Информация</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="#!">Главная</a></li>
-                  <li><a href="./404.html">О компании</a></li>
-                  <li><a href="./404.html">Галерея</a></li>
-                  <li><a href="./404.html">Блог</a></li>
-                </ul>
-              </div>
-  
-              <div class="footer-widget footer-widget--services">
-                <h3 class="footer-widget__title">Услуги</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="./404.html">Бесплатные туры</a></li>
-                  <li><a href="./404.html">Невероятные приключения</a></li>
-                  <li><a href="./404.html">Экстремальный отдых</a></li>
-                  <li><a href="./404.html">Экзотические джунгли</a></li>
-                  <li><a href="./tracking.html">Трекинг походы</a></li>
-                </ul>
-              </div>
-  
-              <div class="footer-widget footer-widget--contacts">
-                <h3 class="footer-widget__title">Контакты</h3>
-                <ul class="footer-widget__list">
-                  <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
-                  <li><a href="mailto:info@foresttravel.com">info@foresttravel.com</a></li>
-                  <li>г. Москва, Рязанский проспект 54, офис 112.</li>
-                </ul>
-              </div>
+            <p>
+              При поддержке Управления по туризму Российской Федерации.
+              ФорестТревел. Все права защищены. Copyright © 2021
+            </p>
+          </div>
+
+          <div class="footer-widgets-wrapper">
+            <div class="footer-widget footer-widget-info">
+              <h3 class="footer-widget-title">Информация</h3>
+              <ul class="footer-widget-list">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./404.html">О компании</a></li>
+                <li><a href="./404.html">Галерея</a></li>
+                <li><a href="./404.html">Блог</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-widget footer-widget-services">
+              <h3 class="footer-widget-title">Услуги</h3>
+              <ul class="footer-widget-list">
+                <li><a href="./404.html">Бесплатные туры</a></li>
+                <li><a href="./404.html">Невероятные приключения</a></li>
+                <li><a href="./404.html">Экстремальный отдых</a></li>
+                <li><a href="./404.html">Экзотические джунгли</a></li>
+                <li><a href="#!">Трекинг походы</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-widget footer-widget-contacts">
+              <h3 class="footer-widget-title">Контакты</h3>
+              <ul class="footer-widget-list">
+                <li><a href="tel:+79055555555">+7 (905) 555-55-55</a></li>
+                <li>
+                  <a href="mailto:info@foresttravel.com"
+                    >info@foresttravel.com</a
+                  >
+                </li>
+                <li>г. Москва, Рязанский проспект 54, офис 112.</li>
+              </ul>
             </div>
           </div>
         </div>
+      </div>
     </footer>
-
-    <script src="./js/main.js"></script>
   </body>
 </html>
