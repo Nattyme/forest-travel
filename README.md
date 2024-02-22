@@ -10,4 +10,4 @@ A multi page site for tourism agency **Forest travel**. Figma design.
 HTML, CSS, SCSS, JS, flex, pixel perfect;
 
 **Libs:** 
-Libs: Inputmask-5.x;
+Inputmask-5.x;
