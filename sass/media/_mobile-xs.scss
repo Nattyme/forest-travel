@@ -1,3 +1,4 @@
+/* Mobile XS*/
 @media (max-width: 599px) {
     /* header */
     .logo {
@@ -9,25 +10,38 @@
         font-size: 32px;
     }
 
-    .header-content p {
-        font-size: 18px;
-    }
-
     .header-content {
         transform: translate(-50%, -57%);
+
+        p {
+            font-size: 18px;
+        }
     }
+
+    .header-scroll {
+        &::after {
+            transform: translateX(-63%);
+        }
+    }
+
     /* main-page */
     .main {
         padding: 40px 0;
     } 
 
     .main .container {
-        width: 100%;
+        .container {
+            width: 100%;
+        }
     }
     
     .main-row {
         margin-bottom: 40px;
         flex-direction: column-reverse;
+
+        &:nth-child(even) {
+            flex-direction: column-reverse;
+        }
     } 
 
     .main-img {
@@ -35,19 +49,174 @@
         height: 150px;
     }
 
-    .main-row:nth-child(even) {
-        flex-direction: column-reverse;
-    }
-
     .main-header {
         font-size: 34px;
     }
 
-    .main-content-text p {
-        margin-bottom: 0;
+    .main-content-text {
+        p {
+            margin-bottom: 0;
+        }
     }
 
-    /* footer */
+    .inner-page-header {
+        margin-bottom: 30px;
+    }
+
+    .inner-page {
+
+        .container {
+            width: 100%;
+        }
+    }
+
+    .inner-page-header {
+        
+        .main-header {
+            font-size: 28px;
+        }
+    }
+
+    .cards-wrapper {
+        row-gap: 20px;
+    }
+
+    .card-title-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 50px;
+    }
+
+    .cards-row {
+        row-gap: 20px;
+    }
+
+    .cards-column {
+        row-gap: 20px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .standart-card,
+    .wide-card,
+    .high-card {
+        width: 290px;
+    }
+
+    .row-article-page {
+        row-gap: 20px;
+    }
+
+    .article-page-article {
+        width: 290px;
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        img {
+            margin: 22px 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            line-height: normal;
+        }
+    }
+
+    .article-page-nav-title {
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .article-page-nav-list {
+        font-size: 16px;
+
+        a {
+            padding-top: 6px;
+            padding-bottom: 9px;
+        }
+    }
+
+    /* contacts-page */
+    .contacts-header {
+
+        .main-header {
+            font-size: 28px;
+            line-height: 1;
+        }
+    }
+
+    .contact-row {
+        row-gap: 30px;
+    }
+
+    .contact-info {
+        row-gap: 30px;
+    }
+
+    .contact-block-title {
+        font-size: 20px;
+    }
+
+    .contact-list {
+        padding-top: 0;
+        justify-content: center;
+        row-gap: 20px;
+        line-height: 1.3;
+
+        li {
+            font-size: 16px;
+        }
+    }
+
+    .contact-map {
+        width: unset;
+        height: 157px;
+    }
+
+    .form {
+        padding: 20px 15px 30px;
+    
+        .button {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+        
+    }
+
+    .form-group-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .form-title {
+        font-size: 24px;
+    }
+
+    .form-group-title {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .radio-row + .radio-row {
+        margin-top: 10px;
+    }
+
+    .checkbox-row + .checkbox-row {
+        margin-top: 20px;
+    }
+
+    .form-group:last-of-type {
+        margin-bottom: 20px;
+    }
+
     .footer {
         text-align: center;
     }
@@ -82,9 +251,12 @@
         margin-bottom: 10px;
     }
 
-    .footer-copyright p {
-        padding: 0 15px;
-        font-size: 14px;
+    .footer-copyright {
+
+        p {
+            padding: 0 15px;
+            font-size: 14px;
+        }   
     }
 
     .footer-widget-title {
@@ -94,10 +266,10 @@
 
     .footer-widget-list {
         font-size: 16px;
-    }
 
-    .footer-widget-list li {
-        margin-bottom: 10px;
+        li {
+            margin-bottom: 10px;
+        }
     }
 
     a.button, .button {

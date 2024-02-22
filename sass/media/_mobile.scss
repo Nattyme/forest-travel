@@ -1,3 +1,4 @@
+/* Mobile */
 @media (max-width: 899px) {
     .container {
         width: 600px;
@@ -9,19 +10,24 @@
     }
 
     .header-title {
+        margin-bottom: 20px;
         font-size: 42px;
     }
 
     .header-content {
-        transform: translate(-50%, -61%);
+        padding-top: 0;
+        transform: translate(-50%, -59%);
+        p {
+            font-size: 20px;
+        }
     }
 
-    .header-content p {
-        font-size: 20px;
-    }
+    .header-inner {
+        height: 80px;
 
-    .header-inner .logo {
-        font-size: 30px;
+        .logo {
+            font-size: 30px;
+        }
     }
 
     /* main-page */
@@ -60,6 +66,108 @@
     .main-content-text {
         margin-bottom: 20px;
         font-size: 16px;
+    }
+
+    a.button, .button {
+        padding-left: 35px;
+        padding-right: 35px;
+        height: 46px;
+        font-size: 18px;
+        line-height: 46px;
+    }
+
+    .inner-page {
+        padding: 40px 0;
+    }
+
+    /* tours-page */
+    .cards-row {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 30px
+    }
+
+    .standart-card,
+    .wide-card,
+    .high-card {
+        width: 570px;
+    }
+
+    .card-title-wrapper {
+        max-width: 899px;
+    }
+
+    .row-article-page {
+        flex-wrap: wrap-reverse;
+        row-gap: 40px;
+    }
+
+    .article-page-nav-title {
+        margin-bottom: 20px;
+    }
+
+    .article-page-article {
+        font-size: 16px;
+    }
+
+    .article-page-article {
+        h1 {
+            font-size: 42px;
+        }
+
+        img {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        
+    }
+
+    .article-page-nav {
+        padding-top: 0;
+        flex-grow: 1;
+    }
+ 
+    .contacts-header {
+        margin-bottom: 30px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .contact-block-body iframe {
+        width: 100%;
+    }
+
+    .contact-map {
+        width: 570px;
+        height: 310px;
+    }
+
+    .form {
+        padding: 30px;
+
+        .button {
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 18px;
+        }
+    }
+
+    .form-group:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    .input {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    .form-group-row input:last-child {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     /* Footer */

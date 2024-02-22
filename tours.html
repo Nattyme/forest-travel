@@ -9,7 +9,6 @@
     
     <!-- style -->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,14 +17,14 @@
     <!--// style -->
 
     <!-- open graph -->
-    <meta property="og:url" content= "http://b92582vu.beget.tech/forest-travel/tours.html" />
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Туры и направления - агенство Форест Тревел"/>
-    <meta property="og:description" content="Турпоходы по дикой природе"/>
-    <meta property="og:image" content="http://b92582vu.beget.tech/forest-travel/img/opengraph/opengraph-directions.jpg"/>
-    <!--// open graph --> 
+    <meta property="og:url" content= "http://b92582vu.beget.tech/forest-travel/tours.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Туры и направления - агенство Форест Тревел">
+    <meta property="og:description" content="Турпоходы по дикой природе">
+    <meta property="og:image" content="http://b92582vu.beget.tech/forest-travel/img/opengraph/opengraph-directions.jpg">
+    <!--// open graph  -->
 
-    <!-- favicons -->
+    <!-- favicons --> 
     <link rel="apple-touch-icon" sizes="180x180" href="/forest-travel/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/forest-travel/img/favicons/favicon-16x16.png">
     <link rel="manifest" href="/forest-travel/img/favicons/site.webmanifest">
@@ -35,7 +34,7 @@
     <meta name="msapplication-config" content="/forest-travel/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/png" sizes="32x32" href="/forest-travel/img/favicons/favicon-32x32.png">
-    <!--// favicons -->
+    <!-- // favicons -->
 
   </head>
   <body>
@@ -43,6 +42,7 @@
       <div class="header-top">
         <div class="logo">ФорестТревел</div>
         <nav class="header-nav">
+
           <ul class="header-nav-list">
             <li class="header-nav-list-item">
               <a class="header-nav-link" href="./index.html">Главная</a>
@@ -60,9 +60,20 @@
               <a class="header-nav-link" href="./contacts.html">Контакты</a>
             </li>
           </ul>
-          <button class="header-nav-button">
-            <img src="./img/header/menu.svg" alt="меню">
+
+          <button class="nav-icon">
+            <span class="nav-icon__middle"></span>
           </button>
+
+          <!-- Мобильная навигация -->
+          <ul class="nav-mobile">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="#!">Туры и направления</a></li>
+            <li><a href="./404.html">О компании</a></li>
+            <li><a href="./404.html">Галерея</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+    <!--// Мобильная навигация -->
         </nav>
       </div>
     </header>
@@ -78,7 +89,12 @@
           <!-- row -->
           <div class="cards-row">
             <a class="standart-card" href="#!">
-              <picture><img src="./img/cards/card-01.jpg" alt="Бесплатные туры"></picture>
+                <picture>
+                    <source srcset="./img/cards/card-xs-01.jpg" media="(max-width: 599px)">
+                    <source srcset="./img/cards/card-mobile-01.jpg" media="(max-width: 899px)">
+                    <source srcset="./img/cards/card-tablet-01.jpg" media="(max-width: 1199px)">
+                    <img src="./img/cards/card-01.jpg" alt="Бесплатные туры">
+                </picture>
               <div class="card-title-wrapper">
                 <h2 class="card-title">
                   Бесплатные туры Lorem ipsum dolor sit amet consectetur
@@ -91,9 +107,14 @@
             </a>
 
             <a class="standart-card" href="#!">
-              <picture><img src="./img/cards/card-02.jpg" alt="Невероятные приключения"></picture>
+              <picture>
+                <source srcset="./img/cards/card-xs-02.jpg" media="(max-width: 599px)">
+                <source srcset="./img/cards/card-mobile-02.jpg" media="(max-width: 899px)">
+                <source srcset="./img/cards/card-tablet-02.jpg" media="(max-width: 1199px)">
+                <img src="./img/cards/card-02.jpg" alt="Невероятные приключения">
+            </picture>
               <div class="card-title-wrapper extreme-color">
-                <h2 class="card-title">Невероятные приключения</h2>
+                <h2 class="card-title">Экстремальный отдых   </h2>
               </div>
             </a>
           </div>
@@ -101,24 +122,39 @@
           <!-- row -->
           <div class="cards-row">
             <div class="cards-column">
-              <a class="wide-card" href="./tracking.html">
-                <picture><img src="./img/cards/card-03.jpg" alt="Трекинг походы"></picture>
+              <a class="wide-card" href="#!">
+                <picture>
+                    <source srcset="./img/cards/card-xs-03.jpg" media="(max-width: 599px)">
+                    <source srcset="./img/cards/card-mobile-03.jpg" media="(max-width: 899px)">
+                    <source srcset="./img/cards/card-tablet-03.jpg" media="(max-width: 1199px)">
+                    <img src="./img/cards/card-03.jpg" alt="Трекинг походы">
+                </picture>
                 <div class="card-title-wrapper adventures-color">
-                  <h2 class="card-title">Трекинг походы</h2>
+                  <h2 class="card-title">Невероятные приключения</h2>
                 </div>
               </a>
 
-              <a class="wide-card" href="#!">
-                <picture><img src="./img/cards/card-04.jpg" alt="Экстремальный отдых"></picture>
+              <a class="wide-card" href="./tracking.html">
+                <picture>
+                    <source srcset="./img/cards/card-xs-04.jpg" media="(max-width: 599px)">
+                    <source srcset="./img/cards/card-mobile-04.jpg" media="(max-width: 899px)">
+                    <source srcset="./img/cards/card-tablet-04.jpg" media="(max-width: 1199px)">
+                    <img src="./img/cards/card-04.jpg" alt="Экстремальный отдых">
+                </picture>
                 <div class="card-title-wrapper hiking-color">
-                  <h2 class="card-title">Экстремальный отдых</h2>
+                  <h2 class="card-title">Трекинг походы</h2>
                 </div>
               </a>
             </div>
 
             <div class="cards-column">
               <a class="high-card" href="#!">
-                <picture><img src="./img/cards/card-05.jpg" alt="Экзотические джунгли"></picture>
+                <picture>
+                    <source srcset="./img/cards/card-xs-05.jpg" media="(max-width: 599px)">
+                    <source srcset="./img/cards/card-mobile-05.jpg" media="(max-width: 899px)"> 
+                    <source srcset="./img/cards/card-tablet-05.jpg" media="(max-width: 1199px)">
+                    <img src="./img/cards/card-05.jpg" alt="Экзотические джунгли">
+                </picture>
                 <div class="card-title-wrapper exotic-color">
                   <h2 class="card-title">Экзотические джунгли</h2>
                 </div>
@@ -139,8 +175,8 @@
               <div class="logo">ФорестТревел</div>
             </div>
             <p>
-              При поддержке Управления по туризму Российской Федерации.
-              ФорестТревел. Все права защищены. Copyright © 2021
+                При поддержке Управления по туризму Российской Федерации.
+                ФорестТревел. Все права защищены. Copyright&#160;&#169;&#160;2024
             </p>
           </div>
 
@@ -182,5 +218,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- script -->
+    <script src="./js/main.js"></script>
+    <!--// script -->
   </body>
 </html>

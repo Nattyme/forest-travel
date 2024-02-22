@@ -16,6 +16,7 @@
 a, a:link, a:visited  {
     display: inline-block;
     text-decoration: none;
+    color: inherit;
 }
 
 a:hover  {

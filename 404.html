@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ошибка 404</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -34,7 +33,7 @@
               <a class="header-nav-link" href="./index.html">Главная</a>
             </li>
             <li class="header-nav-list-item">
-              <a class="header-nav-link" href="#!">Туры и направления</a>
+              <a class="header-nav-link" href="./tours.html">Туры и направления</a>
             </li>
             <li class="header-nav-list-item">
               <a class="header-nav-link" href="#!">О компании</a>
@@ -46,9 +45,20 @@
               <a class="header-nav-link" href="./contacts.html">Контакты</a>
             </li>
           </ul>
-          <button class="header-nav-button">
-            <img src="./img/header/menu.svg" alt="меню">
+
+          <button class="nav-icon">
+            <span class="nav-icon__middle"></span>
           </button>
+
+          <!-- Мобильная навигация -->
+          <ul class="nav-mobile">
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./tours.html">Туры и направления</a></li>
+            <li><a href="./404.html">О компании</a></li>
+            <li><a href="./404.html">Галерея</a></li>
+            <li><a href="./contacts.html">Контакты</a></li>
+          </ul>
+         <!--// Мобильная навигация -->
         </nav>
       </div>
     </header>
@@ -73,8 +83,8 @@
               <div class="logo">ФорестТревел</div>
             </div>
             <p>
-              При поддержке Управления по туризму Российской Федерации.
-              ФорестТревел. Все права защищены. Copyright © 2021
+                При поддержке Управления по туризму Российской Федерации.
+                ФорестТревел. Все права защищены. Copyright&#160;&#169;&#160;2024
             </p>
           </div>
 
@@ -116,5 +126,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- script -->
+    <script src="./js/main.js"></script>
+    <!--// script -->
   </body>
 </html>

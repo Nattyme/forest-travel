@@ -1,6 +1,7 @@
-a.button, .button {
+.button {
     height: 50px;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 
     border-radius: 50px;
     background-color: #0AC883;
@@ -10,4 +11,10 @@ a.button, .button {
     line-height: 50px;
     font-weight: 700;
     color: #fff;
+
+    transition: box-shadow 0.2s ease-in;
+
+    &:hover {
+        box-shadow: 0px 0px 30px 0px rgba(24, 219, 148, 0.813);   
+    }
 }
