@@ -51,13 +51,13 @@ $height: 38px;
 // Active state
 .nav-icon.nav-icon--active {
     position: fixed;
-    top: 50px;
+    top: 55px;
     right: 16px;
     z-index: 999;
 }
 
 .header-inner .nav-icon.nav-icon--active {
-    top: 20px;
+    top: 30px;
 }
 
 .nav-icon.nav-icon--active .nav-icon__middle {
