@@ -5,11 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
     navIcon.addEventListener('click', function () {
 	this.classList.toggle('nav-icon--active');
     nav.classList.toggle('nav-mobile--active');
+    });
 
     // phone mask
-    const input = document.querySelector('#phone');
-    const mask = new Inputmask('+7 (999) 999-99-99');
-
-    mask.mask(input);
-});
+    if (document.querySelectorAll('#phone').length > 0) {
+        const input = document.querySelector('#phone');
+        const mask = new Inputmask('+7 (999) 999-99-99');
+        mask.mask(input);
+    }
 });
