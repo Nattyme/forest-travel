@@ -21,4 +21,5 @@ Inputmask-5.x;
 
 <hr>
 
-![readme-cover](https://github.com/user-attachments/assets/81604027-d73b-432b-8dc0-337b5e3eaafb)
+![readme-cover](https://github.com/user-attachments/assets/dd065782-49ab-455e-85e5-982f5a55c4b3)
+
